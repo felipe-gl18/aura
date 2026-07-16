@@ -19,7 +19,6 @@ type OrganizationParams = {
   description: string;
   image: string;
   buttonText: string;
-  path: string;
   link: string;
 };
 
