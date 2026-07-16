@@ -1,0 +1,51 @@
+[
+  {
+    "id": "PAEFI",
+    "name": "PAEFI",
+    "fullName": "PAEFI",
+    "slug": "PAEFI",
+    "description": "Atendimento especializado para pessoas e famílias em situações de violência ou violação de direitos, oferecendo acolhimento, orientação e acompanhamento por meio do CREAS.",
+    "image": "paefi",
+    "buttonText": "Saiba mais",
+    "path": "/services/paefi",
+    "link": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Acolhimento e escuta",
+        "description": "A pessoa ou família é recebida por uma equipe especializada, que realiza uma escuta acolhedora para compreender a situação e as necessidades apresentadas."
+      },
+      {
+        "id": 2,
+        "title": "Avaliação da situação",
+        "description": "A equipe identifica as formas de violência ou violação de direitos existentes e avalia quais medidas de apoio e proteção são necessárias."
+      },
+      {
+        "id": 3,
+        "title": "Acompanhamento especializado",
+        "description": "São realizados atendimentos individuais e familiares com profissionais capacitados, como assistentes sociais e psicólogos, oferecendo orientação e suporte durante o processo."
+      },
+      {
+        "id": 4,
+        "title": "Encaminhamentos para a rede de proteção",
+        "description": "Quando necessário, a pessoa é encaminhada para outros serviços, como saúde, justiça, segurança pública e outros equipamentos de assistência social."
+      },
+      {
+        "id": 5,
+        "title": "Fortalecimento da autonomia",
+        "description": "O acompanhamento busca fortalecer vínculos, garantir acesso a direitos e apoiar a pessoa na construção de novos caminhos com mais segurança e proteção."
+      }
+    ]
+  },
+  {
+    "id": "190",
+    "name": "Ligue 190",
+    "fullName": "Polícia Militar - Emergência",
+    "slug": "190",
+    "description": "Em caso de perigo imediato, ligue para o 190. Você não está sozinho(a). A ajuda pode chegar rapidamente quando cada segundo faz a diferença.",
+    "image": "policia_militar",
+    "buttonText": "Saiba quando ligar",
+    "path": "/services/190",
+    "link": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica"
+  }
+]

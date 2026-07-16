@@ -1,0 +1,42 @@
+[
+  {
+    "id": "190",
+    "name": "Ligue 190",
+    "fullName": "Polícia Militar - Emergência",
+    "slug": "190",
+    "description": "O telefone 190 deve ser acionado em situações de perigo imediato ou quando a violência está acontecendo. A Polícia Militar pode realizar o atendimento emergencial, proteger a vítima e tomar as medidas necessárias no local.",
+    "image": "policia_militar",
+    "buttonText": "Saiba quando ligar",
+    "link": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica"
+  },
+  {
+    "id": "creas",
+    "name": "CREAS",
+    "fullName": "Centro de Referência Especializado de Assistência Social",
+    "slug": "creas",
+    "description": "O Centro de Referência Especializado de Assistência Social atende pessoas que tiveram seus direitos violados, oferecendo apoio especializado, acolhimento e acompanhamento psicossocial.",
+    "image": "creas",
+    "buttonText": "Conheça o CREAS",
+    "link": "https://wa.me/558881132679"
+  },
+  {
+    "id": "cras",
+    "name": "CRAS",
+    "fullName": "Centro de Referência de Assistência Social",
+    "slug": "cras",
+    "description": "O Centro de Referência de Assistência Social oferece acolhimento, orientação e acesso a serviços que fortalecem famílias e pessoas em situação de vulnerabilidade.",
+    "image": "cras",
+    "buttonText": "Conheça o CRAS",
+    "link": "https://wa.me/5588836116877"
+  },
+  {
+    "id": "ddm",
+    "name": "DDM",
+    "fullName": "Delegacia de Defesa da Mulher",
+    "slug": "ddm",
+    "description": "A Delegacia de Defesa da Mulher é especializada no atendimento às mulheres em situação de violência, realizando registros de ocorrência, investigações e encaminhamentos para a rede de proteção.",
+    "image": "ddm",
+    "buttonText": "Conheça a DDM",
+    "link": "https://wa.me/5585989597453"
+  }
+]

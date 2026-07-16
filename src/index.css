@@ -1,0 +1,152 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/geist";
+
+/* ===========================
+   AURA DESIGN SYSTEM COLORS
+=========================== */
+
+@theme {
+  --color-primary-main: #6c3eb8;
+  --color-primary-dark: #512b8a;
+  --color-primary-light: #ede5fa;
+
+  --color-background: #f7f7fa;
+  --color-surface: #ffffff;
+
+  --color-text: #2d2d2d;
+  --color-text-secondary: #6b7280;
+
+  --color-success: #16a34a;
+  --color-warning: #d97706;
+  --color-danger: #dc2626;
+}
+
+/* ===========================
+   SHADCN VARIABLES
+=========================== */
+
+@theme inline {
+  --font-heading: var(--font-sans);
+  --font-sans: "Geist Variable", sans-serif;
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-destructive: var(--destructive);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+}
+
+/* ===========================
+   ROOT THEME
+=========================== */
+
+:root {
+  --background: #f7f7fa;
+  --foreground: #2d2d2d;
+
+  --card: #ffffff;
+  --card-foreground: #2d2d2d;
+
+  --popover: #ffffff;
+  --popover-foreground: #2d2d2d;
+
+  /* AURA PRIMARY */
+  --primary: #6c3eb8;
+  --primary-foreground: #ffffff;
+
+  --secondary: #ede5fa;
+  --secondary-foreground: #512b8a;
+
+  --muted: #f7f7fa;
+  --muted-foreground: #6b7280;
+
+  --accent: #ede5fa;
+  --accent-foreground: #512b8a;
+
+  --destructive: #dc2626;
+
+  --border: #e5e7eb;
+  --input: #e5e7eb;
+  --ring: #6c3eb8;
+
+  --radius: 0.625rem;
+}
+
+/* ===========================
+   DARK MODE
+=========================== */
+
+.dark {
+  --background: #18181b;
+  --foreground: #f7f7fa;
+
+  --card: #27272a;
+  --card-foreground: #f7f7fa;
+
+  --popover: #27272a;
+  --popover-foreground: #f7f7fa;
+
+  --primary: #ede5fa;
+  --primary-foreground: #512b8a;
+
+  --secondary: #512b8a;
+  --secondary-foreground: #ffffff;
+
+  --muted: #27272a;
+  --muted-foreground: #a1a1aa;
+
+  --accent: #512b8a;
+  --accent-foreground: #ffffff;
+
+  --destructive: #ef4444;
+
+  --border: rgba(255, 255, 255, 0.1);
+  --input: rgba(255, 255, 255, 0.15);
+  --ring: #ede5fa;
+}
+
+/* ===========================
+   BASE
+=========================== */
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  html {
+    @apply font-sans;
+  }
+}
