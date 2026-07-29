@@ -77,11 +77,13 @@ const data = [
 
 export default function ViolenceTypes() {
   return (
-    <div className="w-full flex flex-col justify-start items-center gap-6 py-[96px]">
-      <p className="text-2xl font-bold text-[#2D2D2D]">Tipos de violência</p>
+    <div className="w-full flex flex-col justify-start items-center gap-6 px-4 py-12 sm:px-8 lg:py-[96px]">
+      <p className="text-xl font-bold text-[#2D2D2D] sm:text-2xl">
+        Tipos de violência
+      </p>
       <Carousel
         opts={{ align: "start" }}
-        className="w-[600px] min-w-0 shrink-0"
+        className="w-full max-w-[600px] min-w-0 shrink-0"
         plugins={[
           Autoplay({
             delay: 2000,
@@ -90,7 +92,10 @@ export default function ViolenceTypes() {
       >
         <CarouselContent className="m-2 items-stretch">
           {data.map((item) => (
-            <CarouselItem key={item.title} className="basis-1/2 flex">
+            <CarouselItem
+              key={item.title}
+              className="flex basis-full sm:basis-1/2"
+            >
               <Card className="flex h-full w-full flex-col ring-primary-light">
                 <CardHeader>
                   <CardTitle>{item.title}</CardTitle>
