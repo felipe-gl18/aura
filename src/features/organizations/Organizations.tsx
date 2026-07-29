@@ -1,18 +1,55 @@
+import { Icon } from "@iconify/react";
 import data from "./data/data.json";
 import Organization from "./Organization";
 
-export default function Organizations() {
+export default function Organizations({
+  variant = "default",
+}: {
+  variant?: "default" | "organization";
+}) {
   return (
-    <div className="flex flex-col items-center gap-8">
-      {data.map((item, index) => (
-        <Organization
-          key={item.id}
-          data={item}
-          direction={index % 2 === 0 ? "right" : "left"}
-          showImage={true}
-          theme="dark"
-        />
-      ))}
-    </div>
+    <section className="p-6 sm:p-12 lg:p-[96px]">
+      {variant === "organization" && (
+        <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h2 className="text-2xl font-black text-text sm:text-3xl">
+              Rede de Apoio
+            </h2>
+            <p className="mt-2 text-sm text-text-secondary sm:text-base">
+              Conheça as principais organizações de proteção e assistência.
+            </p>
+          </div>
+          <a
+            href="/organizations"
+            className="group flex items-center gap-2 text-sm font-semibold text-primary-main transition-all hover:gap-3"
+          >
+            Ver todas organizações
+            <Icon
+              icon="solar:arrow-right-linear"
+              width={18}
+              className="transition-transform group-hover:translate-x-1"
+            />
+          </a>
+        </div>
+      )}
+      <div
+        className={
+          variant !== "default"
+            ? "grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"
+            : "flex flex-col items-center gap-8"
+        }
+      >
+        {data.map((item, index) => (
+          <Organization
+            key={item.id}
+            data={item}
+            variant={variant}
+            direction={index % 2 === 0 ? "right" : "left"}
+            showImage
+            theme="dark"
+          />
+        ))}
+      </div>
+    </section>
   );
 }
