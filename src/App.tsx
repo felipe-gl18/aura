@@ -7,6 +7,7 @@ import ServiceDetail from "./features/services/ServiceDetail";
 import Events from "./features/events/Events";
 import Panorama from "./features/panorama/Panorama";
 import Contact from "./features/contact/Contact";
+import Organizations from "./features/organizations/Organizations";
 
 function App() {
   return (
@@ -15,10 +16,20 @@ function App() {
         <Route element={<MainLayout />}>
           <Route path="/" element={<Navigate to="/home" replace />}></Route>
           <Route path="/home" element={<Home />}></Route>
-          <Route path="/services" element={<Services />}></Route>
+          <Route
+            path="/organizations"
+            element={<Organizations variant="default" />}
+          ></Route>
+          <Route
+            path="/services"
+            element={<Services variant="default" />}
+          ></Route>
           <Route path="/services/:service" element={<ServiceDetail />}></Route>
-          <Route path="/events" element={<Events />}></Route>
-          <Route path="/panorama" element={<Panorama />}></Route>
+          <Route path="/events" element={<Events variant="default" />}></Route>
+          <Route
+            path="/panorama"
+            element={<Panorama variant="default" />}
+          ></Route>
           <Route path="/contact" element={<Contact />}></Route>
         </Route>
       </Routes>
