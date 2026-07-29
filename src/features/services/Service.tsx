@@ -17,6 +17,7 @@ type ServiceParams = {
   buttonText: string;
   path?: string;
   link?: string;
+  highlights: { title: string; description: string; icon: string }[];
 };
 
 export default function Service({
@@ -38,6 +39,7 @@ export default function Service({
         button: data.buttonText,
         link: data.link,
         path: data.path,
+        highlights: data.highlights,
       }}
       showImage={showImage}
       direction={direction}
