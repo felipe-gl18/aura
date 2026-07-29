@@ -15,7 +15,7 @@ type EventParams = {
   slug: string;
   description: string;
   image: string;
-  date: string;
+  highlights: { title: string; description: string; icon: string }[];
 };
 
 export default function Event({
@@ -34,7 +34,7 @@ export default function Event({
       data={{
         title: data.title,
         description: data.description,
-        date: data.date,
+        highlights: data.highlights,
       }}
       showImage={showImage}
       direction={direction}
