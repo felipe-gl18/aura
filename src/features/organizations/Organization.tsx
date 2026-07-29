@@ -18,21 +18,28 @@ type OrganizationParams = {
   slug: string;
   description: string;
   image: string;
+  icon: string;
   buttonText: string;
   link: string;
+  color: string;
+  highlights?: { title: string; description: string; icon: string }[];
+};
+
+type Props = {
+  data: OrganizationParams;
+  variant: "default" | "organization";
+  direction: "right" | "left";
+  showImage: boolean;
+  theme: "light" | "dark";
 };
 
 export default function Organization({
   data,
+  variant,
   direction,
   showImage,
   theme,
-}: {
-  data: OrganizationParams;
-  direction: "right" | "left";
-  showImage: boolean;
-  theme: "light" | "dark";
-}) {
+}: Props) {
   return (
     <Card
       data={{
@@ -40,7 +47,12 @@ export default function Organization({
         description: data.description,
         button: data.buttonText,
         link: data.link,
+        icon: data.icon,
+        color: data.color,
+        subtitle: data.fullName,
+        highlights: data.highlights,
       }}
+      variant={variant}
       showImage={showImage}
       direction={direction}
       theme={theme}
