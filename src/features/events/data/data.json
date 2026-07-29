@@ -7,7 +7,24 @@
     "image": "grupo_autonomia",
     "date": "2026-07-15",
     "location": "Centro Dia do Idoso",
-    "buttonText": "Saiba mais"
+    "buttonText": "Saiba mais",
+    "highlights": [
+      {
+        "icon": "solar:calendar-bold",
+        "title": "Data",
+        "description": "15 de julho de 2026"
+      },
+      {
+        "icon": "solar:map-point-bold",
+        "title": "Local",
+        "description": "Centro Dia do Idoso"
+      },
+      {
+        "icon": "solar:users-group-rounded-bold",
+        "title": "Público",
+        "description": "Pessoas idosas"
+      }
+    ]
   },
   {
     "id": "novas-trilhas",
@@ -17,7 +34,24 @@
     "image": "novas_trilhas",
     "date": "2026-07-15",
     "location": "CREAS",
-    "buttonText": "Saiba mais"
+    "buttonText": "Saiba mais",
+    "highlights": [
+      {
+        "icon": "solar:calendar-bold",
+        "title": "Data",
+        "description": "15 de julho de 2026"
+      },
+      {
+        "icon": "solar:map-point-bold",
+        "title": "Local",
+        "description": "CREAS"
+      },
+      {
+        "icon": "solar:document-text-bold",
+        "title": "Tema",
+        "description": "Medidas socioeducativas"
+      }
+    ]
   },
   {
     "id": "aepeti-feira-aprazivel",
@@ -27,6 +61,23 @@
     "image": "aepeti",
     "date": "2026-07-15",
     "location": "Feira do Aprazível",
-    "buttonText": "Saiba mais"
+    "buttonText": "Saiba mais",
+    "highlights": [
+      {
+        "icon": "solar:calendar-bold",
+        "title": "Data",
+        "description": "15 de julho de 2026"
+      },
+      {
+        "icon": "solar:map-point-bold",
+        "title": "Local",
+        "description": "Feira do Aprazível"
+      },
+      {
+        "icon": "solar:shield-warning-bold",
+        "title": "Objetivo",
+        "description": "Combate ao trabalho infantil"
+      }
+    ]
   }
 ]

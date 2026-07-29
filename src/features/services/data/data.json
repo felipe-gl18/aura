@@ -9,6 +9,23 @@
     "buttonText": "Saiba mais",
     "path": "/services/paefi",
     "link": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica",
+    "highlights": [
+      {
+        "icon": "solar:user-heart-bold",
+        "title": "Público",
+        "description": "Famílias e indivíduos"
+      },
+      {
+        "icon": "solar:shield-warning-bold",
+        "title": "Foco",
+        "description": "Violação de direitos"
+      },
+      {
+        "icon": "solar:buildings-2-bold",
+        "title": "Realizado por",
+        "description": "CREAS"
+      }
+    ],
     "steps": [
       {
         "id": 1,
@@ -46,6 +63,23 @@
     "image": "policia_militar",
     "buttonText": "Saiba quando ligar",
     "path": "/services/190",
-    "link": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica"
+    "link": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica",
+    "highlights": [
+      {
+        "icon": "solar:clock-circle-bold",
+        "title": "Disponível",
+        "description": "24 horas por dia"
+      },
+      {
+        "icon": "solar:danger-triangle-bold",
+        "title": "Quando ligar",
+        "description": "Emergência imediata"
+      },
+      {
+        "icon": "solar:siren-bold",
+        "title": "Resposta",
+        "description": "Acionamento da PM"
+      }
+    ]
   }
 ]

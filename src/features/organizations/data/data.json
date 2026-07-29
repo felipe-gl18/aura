@@ -6,8 +6,27 @@
     "slug": "190",
     "description": "O telefone 190 deve ser acionado em situações de perigo imediato ou quando a violência está acontecendo. A Polícia Militar pode realizar o atendimento emergencial, proteger a vítima e tomar as medidas necessárias no local.",
     "image": "policia_militar",
+    "icon": "solar:siren-bold",
+    "color": "#DC2626",
     "buttonText": "Saiba quando ligar",
-    "link": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica"
+    "link": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica",
+    "highlights": [
+      {
+        "icon": "solar:clock-circle-bold",
+        "title": "Atendimento",
+        "description": "24 horas por dia"
+      },
+      {
+        "icon": "solar:danger-triangle-bold",
+        "title": "Quando ligar",
+        "description": "Perigo imediato"
+      },
+      {
+        "icon": "solar:map-point-bold",
+        "title": "Abrangência",
+        "description": "Todo o Brasil"
+      }
+    ]
   },
   {
     "id": "creas",
@@ -16,8 +35,27 @@
     "slug": "creas",
     "description": "O Centro de Referência Especializado de Assistência Social atende pessoas que tiveram seus direitos violados, oferecendo apoio especializado, acolhimento e acompanhamento psicossocial.",
     "image": "creas",
+    "icon": "solar:shield-user-bold",
+    "color": "#6C3EB8",
     "buttonText": "Conheça o CREAS",
-    "link": "https://wa.me/558881132679"
+    "link": "https://wa.me/558881132679",
+    "highlights": [
+      {
+        "icon": "solar:user-heart-bold",
+        "title": "Público",
+        "description": "Vítimas de violência"
+      },
+      {
+        "icon": "solar:stethoscope-bold",
+        "title": "Equipe",
+        "description": "Psicólogos e assistentes sociais"
+      },
+      {
+        "icon": "solar:shield-check-bold",
+        "title": "Atendimento",
+        "description": "Especializado"
+      }
+    ]
   },
   {
     "id": "cras",
@@ -26,8 +64,27 @@
     "slug": "cras",
     "description": "O Centro de Referência de Assistência Social oferece acolhimento, orientação e acesso a serviços que fortalecem famílias e pessoas em situação de vulnerabilidade.",
     "image": "cras",
+    "icon": "solar:users-group-rounded-bold",
+    "color": "#16A34A",
     "buttonText": "Conheça o CRAS",
-    "link": "https://wa.me/5588836116877"
+    "link": "https://wa.me/5588836116877",
+    "highlights": [
+      {
+        "icon": "solar:home-smile-bold",
+        "title": "Objetivo",
+        "description": "Prevenção social"
+      },
+      {
+        "icon": "solar:users-group-rounded-bold",
+        "title": "Público",
+        "description": "Famílias em vulnerabilidade"
+      },
+      {
+        "icon": "solar:document-text-bold",
+        "title": "Serviços",
+        "description": "Benefícios e orientação"
+      }
+    ]
   },
   {
     "id": "ddm",
@@ -36,7 +93,26 @@
     "slug": "ddm",
     "description": "A Delegacia de Defesa da Mulher é especializada no atendimento às mulheres em situação de violência, realizando registros de ocorrência, investigações e encaminhamentos para a rede de proteção.",
     "image": "ddm",
+    "icon": "solar:shield-check-bold",
+    "color": "#D97706",
     "buttonText": "Conheça a DDM",
-    "link": "https://wa.me/5585989597453"
+    "link": "https://wa.me/5585989597453",
+    "highlights": [
+      {
+        "icon": "solar:shield-warning-bold",
+        "title": "Especialidade",
+        "description": "Violência contra a mulher"
+      },
+      {
+        "icon": "solar:document-add-bold",
+        "title": "Serviços",
+        "description": "Boletim e investigação"
+      },
+      {
+        "icon": "solar:gavel-bold",
+        "title": "Proteção",
+        "description": "Medidas legais"
+      }
+    ]
   }
 ]
