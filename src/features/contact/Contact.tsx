@@ -3,17 +3,17 @@ import ContactInfo from "./ContactInfo";
 
 export default function Contact() {
   return (
-    <section className="mx-auto flex w-full max-w-7xl flex-col gap-12 py-20">
+    <section className="mx-auto flex w-full max-w-7xl flex-col gap-10 px-4 py-12 sm:px-8 lg:gap-12 lg:py-20">
       <div className="space-y-4 text-center">
         <span className="rounded-full bg-primary-light px-4 py-1 text-sm font-medium text-primary">
           Entre em contato
         </span>
 
-        <h2 className="text-5xl font-bold text-text">
+        <h2 className="text-3xl font-bold text-text sm:text-4xl lg:text-5xl">
           Precisa de ajuda ou possui alguma dúvida?
         </h2>
 
-        <p className="mx-auto max-w-3xl text-lg leading-8 text-text-secondary">
+        <p className="mx-auto max-w-3xl text-base leading-7 text-text-secondary sm:text-lg sm:leading-8">
           O AURA faz parte da rede de proteção e orientação às mulheres em
           situação de violência. Caso tenha dúvidas sobre os serviços
           disponíveis, entre em contato com o CREAS ou envie uma mensagem pelo

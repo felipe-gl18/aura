@@ -17,33 +17,45 @@ export default function ServiceDetail() {
 
   return (
     <div className="w-full h-full flex flex-col justify-center items-center">
-      <div className="w-[840px] px-[54px] flex flex-col gap-8 my-[76px]">
+      <div className="w-full max-w-[840px] px-4 sm:px-8 lg:px-[54px] flex flex-col gap-6 sm:gap-8 py-12 lg:my-[76px]">
         <div className="space-y-2">
-          <p className="text-4xl font-black text-[#2D2D2D]">
+          <p className="text-2xl font-black text-[#2D2D2D] sm:text-3xl lg:text-4xl">
             {service?.toUpperCase()}
           </p>
-          <span className="text-[#6B7280]">{serviceData?.description}</span>
+          <span className="text-sm text-[#6B7280] sm:text-base">
+            {serviceData?.description}
+          </span>
         </div>
+
         <img
           src={images[serviceData?.image as keyof typeof images]}
           alt={serviceData?.name}
-          className="w-[732px] h-auto shrink-0 rounded-md"
+          className="w-full h-auto shrink-0 rounded-md"
         />
+
         <div className="space-y-4">
-          <p className="text-4xl font-black text-[#2D2D2D]">Como funciona?</p>
-          <ol>
+          <p className="text-2xl font-black text-[#2D2D2D] sm:text-3xl lg:text-4xl">
+            Como funciona?
+          </p>
+          <ol className="space-y-3">
             {serviceData?.steps?.map((step) => (
-              <>
-                <li className="text-[#6B7280]">
+              <li key={step.id} className="space-y-1">
+                <p className="text-sm font-medium text-[#6B7280] sm:text-base">
                   {step.id}. {step.title}
-                </li>
-                <p className="text-[#6B7280]">{step.description}</p>
-              </>
+                </p>
+                <p className="text-sm text-[#6B7280] sm:text-base">
+                  {step.description}
+                </p>
+              </li>
             ))}
           </ol>
         </div>
+
         <div className="w-full text-center">
-          <Button onClick={handleRedirect} className="w-[252px] h-[44px]">
+          <Button
+            onClick={handleRedirect}
+            className="w-full max-w-[252px] h-[44px]"
+          >
             {serviceData?.buttonText}
           </Button>
         </div>

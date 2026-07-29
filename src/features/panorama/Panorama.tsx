@@ -1,3 +1,4 @@
+import { Icon } from "@iconify/react";
 import PanoramaAction from "./PanoramaAction";
 import PanoramaNumbers from "./PanoramaNumbers";
 import PanoramaViolenceTypes from "./PanoramaViolenceTypes";
@@ -5,43 +6,51 @@ import PanoramaWhen from "./PanoramaWhen";
 import PanoramaWhere from "./PanoramaWhere";
 import PanoramaWho from "./PanoramaWho";
 
-export default function Panorama() {
+export default function Panorama({
+  variant,
+}: {
+  variant: "default" | "basic";
+}) {
   return (
-    <div className="w-8/10 flex flex-col justify-self-center px-[96px] gap-6 pb-[96px]">
-      <section className="mx-auto flex w-full max-w-7xl flex-col gap-3 py-16">
+    <div className="w-full flex flex-col justify-self-center px-4 sm:px-8 lg:px-[96px] gap-6 pb-16 lg:pb-[96px]">
+      <section className="flex w-full flex-col gap-3 py-10 lg:py-16">
         <span className="w-fit rounded-full bg-primary-light px-3 py-1 text-sm font-medium text-primary">
           📊 Panorama
         </span>
 
-        <h2 className="text-5xl font-bold tracking-tight text-text">
+        <h2 className="text-2xl font-black text-text sm:text-3xl">
           Panorama da Violência Contra a Mulher
         </h2>
 
-        <div className="flex items-center justify-between">
-          <p className="text-lg text-text-secondary">
-            Dados oficiais do{" "}
+        <div className="flex flex-col gap-3 w-full sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-base text-text-secondary sm:text-lg">
+            Dados oficiais do
             <span className="font-semibold text-primary">Ligue 180</span> •
             Janeiro a Julho de 2025
           </p>
-
           <a
-            href="#"
-            className="text-sm text-primary transition-colors hover:text-primary-dark"
+            href="/services"
+            className="group flex items-center gap-2 text-sm font-semibold text-primary-main transition-all hover:gap-3"
           >
-            Fonte: Ministério das Mulheres ↗
+            Fonte: Ministério das Mulheres
+            <Icon
+              icon="solar:arrow-right-linear"
+              width={18}
+              className="transition-transform group-hover:translate-x-1"
+            />
           </a>
         </div>
       </section>
       <PanoramaNumbers />
-      <div className="flex gap-6">
+      <div className="flex flex-col gap-6 lg:flex-row">
         <PanoramaViolenceTypes />
         <PanoramaWhere />
       </div>
-      <div className="flex gap-6">
+      <div className="flex flex-col gap-6 lg:flex-row">
         <PanoramaWho />
         <PanoramaWhen />
       </div>
-      <PanoramaAction />
+      {variant === "default" && <PanoramaAction />}
     </div>
   );
 }
