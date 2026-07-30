@@ -1,0 +1,94 @@
+{
+  "start": {
+    "message": "Olá! Vou ajudar você a encontrar o atendimento mais adequado. Responda algumas perguntas.",
+    "question": "Você ou alguém está em perigo neste momento?",
+    "options": [
+      {
+        "label": "Sim, há risco imediato",
+        "next": "immediateDanger"
+      },
+      {
+        "label": "Não",
+        "next": "violence"
+      }
+    ]
+  },
+
+  "immediateDanger": {
+    "question": "O agressor está no local ou a violência está acontecendo agora?",
+    "options": [
+      {
+        "label": "Sim",
+        "organization": "190"
+      },
+      {
+        "label": "Não",
+        "next": "report"
+      }
+    ]
+  },
+
+  "violence": {
+    "question": "Qual situação melhor descreve o que você procura?",
+    "options": [
+      {
+        "label": "Sofri ou sofro violência",
+        "next": "report"
+      },
+      {
+        "label": "Preciso de apoio para minha família",
+        "organization": "cras"
+      },
+      {
+        "label": "Quero apenas conhecer meus direitos",
+        "next": "guidance"
+      }
+    ]
+  },
+
+  "report": {
+    "question": "Você deseja registrar uma ocorrência ou buscar proteção legal?",
+    "options": [
+      {
+        "label": "Sim",
+        "organization": "ddm"
+      },
+      {
+        "label": "Ainda não",
+        "next": "support"
+      }
+    ]
+  },
+
+  "support": {
+    "question": "Você gostaria de receber apoio psicológico e acompanhamento social?",
+    "options": [
+      {
+        "label": "Sim",
+        "organization": "creas"
+      },
+      {
+        "label": "Não tenho certeza",
+        "next": "guidance"
+      }
+    ]
+  },
+
+  "guidance": {
+    "question": "O que você precisa neste momento?",
+    "options": [
+      {
+        "label": "Conversar com uma equipe especializada",
+        "organization": "creas"
+      },
+      {
+        "label": "Orientação sobre benefícios sociais",
+        "organization": "cras"
+      },
+      {
+        "label": "Registrar denúncia",
+        "organization": "ddm"
+      }
+    ]
+  }
+}
