@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Logo from "@/assets/logo.png";
+import Logo from "@/assets/white_full_logo.png";
 import organizations from "@/features/organizations/data/data.json";
 import services from "@/features/services/data/data.json";
 import events from "@/features/events/data/data.json";
@@ -26,7 +26,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="relative flex items-center justify-between p-[26px] bg-white">
+    <div className="relative flex items-center justify-between bg-primary-main px-[26px] py-[26px] shadow-sm">
       {/* Logo — sempre visível */}
       <Link to="home" onClick={() => setMobileOpen(false)}>
         <img src={Logo} className="h-[64px] w-auto lg:h-[84px] lg:w-[126px]" />
@@ -36,7 +36,20 @@ export default function Navbar() {
       <NavigationMenu className="hidden lg:flex max-w-none flex-1 justify-center">
         <NavigationMenuList className="flex items-center gap-2">
           <NavigationMenuItem>
-            <NavigationMenuTrigger>
+            <NavigationMenuTrigger
+              className="
+    rounded-md
+    bg-transparent
+    text-white
+    transition-all
+    duration-200
+    hover:bg-primary-dark
+    hover:scale-105
+    hover:text-white
+    data-[state=open]:bg-primary-dark
+    data-[state=open]:text-white
+  "
+            >
               <Link to="organizations">Organizations</Link>
             </NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -54,7 +67,20 @@ export default function Navbar() {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger>
+            <NavigationMenuTrigger
+              className="
+    rounded-md
+    bg-transparent
+    text-white
+    transition-all
+    duration-200
+    hover:bg-primary-dark
+    hover:scale-105
+    hover:text-white
+    data-[state=open]:bg-primary-dark
+    data-[state=open]:text-white
+  "
+            >
               <Link to="services">Serviços</Link>
             </NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -72,7 +98,20 @@ export default function Navbar() {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger>
+            <NavigationMenuTrigger
+              className="
+    rounded-md
+    bg-transparent
+    text-white
+    transition-all
+    duration-200
+    hover:bg-primary-dark
+    hover:scale-105
+    hover:text-white
+    data-[state=open]:bg-primary-dark
+    data-[state=open]:text-white
+  "
+            >
               <Link to="events">Eventos</Link>
             </NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -90,7 +129,19 @@ export default function Navbar() {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem onClick={() => handleRedirect("panorama")}>
-            <NavigationMenuLink className="cursor-pointer">
+            <NavigationMenuLink
+              className="
+        cursor-pointer
+        rounded-md
+        px-3
+        py-2
+        text-white
+        transition-all
+        duration-200
+        hover:bg-primary-dark
+        hover:scale-105
+    "
+            >
               Panorama
             </NavigationMenuLink>
           </NavigationMenuItem>
@@ -100,7 +151,19 @@ export default function Navbar() {
       <div className="hidden lg:flex">
         <Link
           to="contact"
-          className="cursor-pointer border border-primary-main px-4 py-2 rounded-md hover:bg-transparent"
+          className="
+    rounded-md
+    border
+    border-white/40
+    px-4
+    py-2
+    text-white
+    transition-all
+    duration-200
+    hover:bg-white
+    hover:text-primary-main
+    hover:scale-[1.03]
+  "
         >
           Entrar em contato
         </Link>
@@ -112,7 +175,7 @@ export default function Navbar() {
         aria-label={mobileOpen ? "Fechar menu" : "Abrir menu"}
         aria-expanded={mobileOpen}
         onClick={() => setMobileOpen((prev) => !prev)}
-        className="flex lg:hidden text-primary-main"
+        className="flex lg:hidden text-white transition-transform duration-200 hover:scale-110"
       >
         {mobileOpen ? <X size={28} /> : <Menu size={28} />}
       </button>
@@ -237,7 +300,18 @@ function ListItem({
     <li {...props}>
       <NavigationMenuLink
         render={
-          <Link to={href}>
+          <Link
+            to={href}
+            className="
+        block
+        rounded-md
+        p-3
+        transition-all
+        duration-200
+        hover:bg-primary-light
+        hover:translate-x-1
+    "
+          >
             <div className="flex flex-col gap-1 text-sm">
               <div className="leading-none font-medium">{title}</div>
               <div className="line-clamp-2 text-muted-foreground">
