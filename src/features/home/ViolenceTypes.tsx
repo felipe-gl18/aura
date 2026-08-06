@@ -5,12 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
+import { Icon } from "@iconify/react";
 
 const data = [
   {
@@ -75,41 +70,72 @@ const data = [
   },
 ];
 
+const icons: Record<string, string> = {
+  fisica: "solar:heart-broken-linear",
+  psicologica: "boxicons:brain",
+  sexual: "solar:shield-warning-linear",
+  patrimonial: "solar:wallet-money-linear",
+  moral: "solar:chat-round-dots-linear",
+};
+
 export default function ViolenceTypes() {
   return (
-    <div className="w-full flex flex-col justify-start items-center gap-6 px-4 py-12 sm:px-8 lg:py-[96px]">
-      <p className="text-xl font-bold text-[#2D2D2D] sm:text-2xl">
-        Tipos de violência
-      </p>
-      <Carousel
-        opts={{ align: "start" }}
-        className="w-full max-w-[600px] min-w-0 shrink-0"
-        plugins={[
-          Autoplay({
-            delay: 2000,
-          }),
-        ]}
-      >
-        <CarouselContent className="m-2 items-stretch">
-          {data.map((item) => (
-            <CarouselItem
-              key={item.title}
-              className="flex basis-full sm:basis-1/2"
-            >
-              <Card className="flex h-full w-full flex-col ring-primary-light">
-                <CardHeader>
-                  <CardTitle>{item.title}</CardTitle>
-                  <CardDescription>{item.description}</CardDescription>
-                </CardHeader>
+    <section className="w-full px-4 py-12 sm:px-8 lg:px-16 lg:py-24">
+      <div className="mx-auto">
+        <div className="mb-12 text-center">
+          <span className="rounded-full bg-primary-light px-4 py-1 text-sm font-medium text-primary-main">
+            Informação
+          </span>
 
-                <CardContent className="flex-1 text-sm text-muted-foreground">
-                  {item.examples.join(", ")}
-                </CardContent>
-              </Card>
-            </CarouselItem>
+          <h2 className="mt-4 text-3xl font-bold text-text sm:text-4xl">
+            Tipos de violência
+          </h2>
+
+          <p className="mx-auto mt-4 max-w-2xl text-text-secondary">
+            Conheça as principais formas de violência previstas na Lei Maria da
+            Penha.
+          </p>
+        </div>
+
+        <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-5">
+          {data.map((item) => (
+            <Card
+              key={item.value}
+              className="h-full border-0 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+            >
+              <CardHeader>
+                <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary-light">
+                  <Icon
+                    icon={icons[item.value]}
+                    width={28}
+                    className="text-primary-main"
+                  />
+                </div>
+
+                <CardTitle>{item.title}</CardTitle>
+
+                <CardDescription className="leading-6">
+                  {item.description}
+                </CardDescription>
+              </CardHeader>
+
+              <CardContent>
+                <ul className="space-y-2">
+                  {item.examples.map((example) => (
+                    <li
+                      key={example}
+                      className="flex items-start gap-2 text-sm text-text-secondary"
+                    >
+                      <span className="mt-1.5 h-2 w-2 rounded-full bg-primary-main" />
+                      {example}
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
           ))}
-        </CarouselContent>
-      </Carousel>
-    </div>
+        </div>
+      </div>
+    </section>
   );
 }

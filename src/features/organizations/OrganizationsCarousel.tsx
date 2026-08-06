@@ -31,6 +31,7 @@ const stats = [
 export default function OrganizationsCarousel() {
   return (
     <div className="relative flex w-full items-center justify-between overflow-hidden bg-primary-main px-4 py-8 lg:px-0 lg:py-0">
+      {" "}
       <Carousel
         opts={{ align: "start" }}
         className="w-full lg:w-[600px] min-w-0 shrink-0 order-2 lg:order-1"
@@ -56,18 +57,7 @@ export default function OrganizationsCarousel() {
       </Carousel>
       <img
         src={logo}
-        className="
-    pointer-events-none
-    absolute
-    left-1/2
-    top-1/2
-    -translate-x-1/2
-    -translate-y-1/2
-    w-[566px]
-    h-auto
-    hidden
-    lg:block
-  "
+        className="order-1 lg:order-2 w-[220px] lg:w-[566px] h-auto shrink-0"
       />
       <div className="order-3 hidden md:flex w-[220px] lg:w-[366px] h-auto shrink-0 lg:mr-[96px] flex-col gap-4">
         {stats.map((stat) => (

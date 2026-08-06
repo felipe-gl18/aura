@@ -165,7 +165,7 @@ export default function Navbar() {
     hover:scale-[1.03]
   "
         >
-          Falar com CREAS
+          Entrar em contato
         </Link>
       </div>
 

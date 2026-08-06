@@ -1,12 +1,12 @@
 import creas from "@/assets/illustrations/CREAS.png";
-import cras from "@/assets/illustrations/CRAS.png";
+import juizado from "@/assets/illustrations/juizado.png";
 import ddm from "@/assets/illustrations/DDM.png";
 import policia_militar from "@/assets/illustrations/190.png";
 import Card from "@/components/Card";
 
 const images = {
   creas,
-  cras,
+  juizado,
   ddm,
   policia_militar,
 };

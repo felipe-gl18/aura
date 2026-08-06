@@ -1,9 +1,13 @@
-import paefi from "@/assets/paefi.png";
+import paefi from "@/assets/paefi.jpeg";
+import abordagem_social from "@/assets/abordagem_social.jpeg";
+import equipe_medidas_socioeducativa from "@/assets/equipe_medidas_socioeducativa.jpeg";
 import policia_militar from "@/assets/illustrations/190.png";
 import Card from "@/components/Card";
 
 const images = {
   paefi,
+  abordagem_social,
+  equipe_medidas_socioeducativa,
   policia_militar,
 };
 

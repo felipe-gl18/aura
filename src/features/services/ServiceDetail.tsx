@@ -1,15 +1,21 @@
 import { useParams } from "react-router-dom";
-import paefi from "@/assets/paefi.png";
+import paefi from "@/assets/paefi.jpeg";
+import abordagem_social from "@/assets/abordagem_social.jpeg";
+import equipe_medidas_socioeducativa from "@/assets/equipe_medidas_socioeducativa.jpeg";
+import policia_militar from "@/assets/illustrations/190.png";
 import data from "./data/data.json";
 import { Button } from "@/components/ui/button";
 
 const images = {
   paefi,
+  abordagem_social,
+  equipe_medidas_socioeducativa,
+  policia_militar,
 };
 
 export default function ServiceDetail() {
   const { service } = useParams();
-  const serviceData = data.find((item) => item.id === service?.toUpperCase());
+  const serviceData = data.find((item) => item.path === `/services/${service}`);
 
   const handleRedirect = () => {
     window.open(serviceData?.link, "_blank");
@@ -20,7 +26,7 @@ export default function ServiceDetail() {
       <div className="w-full max-w-[840px] px-4 sm:px-8 lg:px-[54px] flex flex-col gap-6 sm:gap-8 py-12 lg:my-[76px]">
         <div className="space-y-2">
           <p className="text-2xl font-black text-[#2D2D2D] sm:text-3xl lg:text-4xl">
-            {service?.toUpperCase()}
+            {serviceData?.name}
           </p>
           <span className="text-sm text-[#6B7280] sm:text-base">
             {serviceData?.description}

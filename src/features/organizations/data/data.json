@@ -58,31 +58,31 @@
     ]
   },
   {
-    "id": "cras",
-    "name": "CRAS",
-    "fullName": "Centro de Referência de Assistência Social",
-    "slug": "cras",
-    "description": "O Centro de Referência de Assistência Social oferece acolhimento, orientação e acesso a serviços que fortalecem famílias e pessoas em situação de vulnerabilidade.",
-    "image": "cras",
-    "icon": "solar:users-group-rounded-bold",
-    "color": "#16A34A",
-    "buttonText": "Conheça o CRAS",
-    "link": "https://wa.me/5588836116877",
+    "id": "juizado",
+    "name": "Juizado",
+    "fullName": "Juizado de Violência Doméstica e Familiar contra a Mulher",
+    "slug": "juizado",
+    "description": "O Juizado de Violência Doméstica e Familiar contra a Mulher é um órgão do Poder Judiciário especializado em processar e julgar casos de violência doméstica, garantindo proteção às vítimas por meio de medidas protetivas e atuação integrada com a rede de apoio.",
+    "image": "juizado",
+    "icon": "fluent:gavel-32-filled",
+    "color": "#2563EB",
+    "buttonText": "Conheça o Juizado",
+    "link": "https://www.tjce.jus.br/",
     "highlights": [
       {
-        "icon": "solar:home-smile-bold",
-        "title": "Objetivo",
-        "description": "Prevenção social"
-      },
-      {
-        "icon": "solar:users-group-rounded-bold",
-        "title": "Público",
-        "description": "Famílias em vulnerabilidade"
+        "icon": "solar:shield-check-bold",
+        "title": "Serviço",
+        "description": "NUCEVID"
       },
       {
         "icon": "solar:document-text-bold",
-        "title": "Serviços",
-        "description": "Benefícios e orientação"
+        "title": "Atuação",
+        "description": "Medidas protetivas"
+      },
+      {
+        "icon": "solar:user-heart-bold",
+        "title": "Objetivo",
+        "description": "Proteção às vítimas"
       }
     ]
   },

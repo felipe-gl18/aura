@@ -11,11 +11,11 @@ export default function Home() {
     <div className="space-y-8">
       <OrganizationsCarousel />
       <Organizations variant="organization" />
+      <ViolenceTypes />
       <Panorama variant="basic" />
       <Services variant="basic" />
       <Events variant="basic" />
       <Separator />
-      <ViolenceTypes />
     </div>
   );
 }

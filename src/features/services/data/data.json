@@ -55,6 +55,111 @@
     ]
   },
   {
+    "id": "abordagem_social",
+    "name": "Abordagem Social",
+    "fullName": "Serviço Especializado em Abordagem Social",
+    "slug": "abordagem-social",
+    "description": "Realiza a identificação, acolhimento e encaminhamento de pessoas em situação de vulnerabilidade ou risco social, promovendo o acesso à rede de proteção e aos serviços socioassistenciais.",
+    "image": "abordagem_social",
+    "buttonText": "Saiba mais",
+    "path": "/services/abordagem-social",
+    "link": "https://www.gov.br/mds/pt-br/acoes-e-programas/suas",
+    "highlights": [
+      {
+        "icon": "solar:user-heart-bold",
+        "title": "Objetivo",
+        "description": "Acolhimento e proteção"
+      },
+      {
+        "icon": "solar:map-point-bold",
+        "title": "Atuação",
+        "description": "Busca ativa"
+      },
+      {
+        "icon": "solar:buildings-2-bold",
+        "title": "Realizado por",
+        "description": "CREAS"
+      }
+    ],
+    "steps": [
+      {
+        "id": 1,
+        "title": "Identificação da situação",
+        "description": "A equipe realiza busca ativa ou atende denúncias para identificar pessoas em situação de vulnerabilidade, risco social ou violação de direitos."
+      },
+      {
+        "id": 2,
+        "title": "Acolhimento inicial",
+        "description": "É feita uma escuta qualificada para compreender a situação e oferecer orientação sobre os direitos e serviços disponíveis."
+      },
+      {
+        "id": 3,
+        "title": "Encaminhamento",
+        "description": "A pessoa é encaminhada para serviços da assistência social, saúde, segurança pública, justiça ou outros órgãos da rede de proteção, conforme a necessidade."
+      },
+      {
+        "id": 4,
+        "title": "Acompanhamento",
+        "description": "Quando necessário, a equipe acompanha o caso para garantir que a pessoa tenha acesso aos serviços e aos direitos previstos."
+      }
+    ]
+  },
+  {
+    "id": "equipe_medidas_socioeducativa",
+    "name": "Medidas Socioeducativas",
+    "fullName": "Equipe de Medidas Socioeducativas em Meio Aberto",
+    "slug": "medidas-socioeducativas",
+    "description": "Acompanha adolescentes que cumprem medidas socioeducativas em meio aberto, promovendo orientação, fortalecimento dos vínculos familiares e reintegração social.",
+    "image": "equipe_medidas_socioeducativa",
+    "buttonText": "Saiba mais",
+    "path": "/services/medidas-socioeducativas",
+    "link": "https://www.gov.br/mds/pt-br/acoes-e-programas/suas",
+    "highlights": [
+      {
+        "icon": "solar:users-group-rounded-bold",
+        "title": "Público",
+        "description": "Adolescentes"
+      },
+      {
+        "icon": "solar:shield-check-bold",
+        "title": "Medidas",
+        "description": "Liberdade assistida e PSC"
+      },
+      {
+        "icon": "solar:buildings-2-bold",
+        "title": "Realizado por",
+        "description": "CREAS"
+      }
+    ],
+    "steps": [
+      {
+        "id": 1,
+        "title": "Recebimento do encaminhamento",
+        "description": "O adolescente é encaminhado ao serviço por determinação judicial para cumprimento da medida socioeducativa."
+      },
+      {
+        "id": 2,
+        "title": "Plano de acompanhamento",
+        "description": "A equipe elabora um plano individual considerando a realidade, as necessidades e os objetivos do adolescente."
+      },
+      {
+        "id": 3,
+        "title": "Atendimentos periódicos",
+        "description": "São realizados acompanhamentos com o adolescente e sua família, promovendo orientação, fortalecimento dos vínculos e desenvolvimento pessoal."
+      },
+      {
+        "id": 4,
+        "title": "Articulação com a rede",
+        "description": "O serviço atua em conjunto com escolas, unidades de saúde e demais órgãos da rede para garantir o acesso aos direitos e oportunidades."
+      },
+      {
+        "id": 5,
+        "title": "Conclusão da medida",
+        "description": "Ao final do acompanhamento, a equipe elabora um relatório sobre o cumprimento da medida e os resultados alcançados."
+      }
+    ]
+  },
+  {
     "id": "190",
     "name": "Ligue 190",
     "fullName": "Polícia Militar - Emergência",

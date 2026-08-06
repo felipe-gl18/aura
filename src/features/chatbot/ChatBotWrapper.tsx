@@ -1,13 +1,6 @@
 import { MessageCircleHeart } from "lucide-react";
-
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Bot } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import ChatBot from "./ChatBot";
 
 export default function ChatBotWrapper() {
@@ -43,16 +36,20 @@ export default function ChatBotWrapper() {
       </SheetTrigger>
 
       <SheetContent>
-        <SheetHeader className="border-b bg-primary px-6 py-5 text-primary-foreground">
-          <SheetTitle className="text-xl font-bold text-white">
-            Assistente AURA
-          </SheetTitle>
+        <div className="border-b px-5 py-4">
+          <div className="flex items-center gap-3">
+            <div className="flex h-11 w-11 items-center justify-center rounded-full bg-primary/10">
+              <Bot className="h-6 w-6 text-primary" />
+            </div>
 
-          <SheetDescription className="text-primary-foreground/80">
-            Responda algumas perguntas para encontrarmos o atendimento mais
-            adequado para você.
-          </SheetDescription>
-        </SheetHeader>
+            <div>
+              <h2 className="font-semibold">AURA Assistant</h2>
+              <p className="text-xs text-muted-foreground">
+                Atendimento automatizado • Opções pré-definidas
+              </p>
+            </div>
+          </div>
+        </div>
 
         <div className="flex-1 overflow-y-auto p-6">
           <ChatBot />
