@@ -55,9 +55,44 @@ function NavigationMenuItem({
   );
 }
 
-const navigationMenuTriggerStyle = cva(
-  "group/navigation-menu-trigger inline-flex h-9 w-max items-center justify-center rounded-lg px-2.5 py-1.5 text-sm font-medium transition-all outline-none hover:bg-muted focus:bg-muted focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 data-popup-open:bg-muted/50 data-popup-open:hover:bg-muted data-open:bg-muted/50 data-open:hover:bg-muted data-open:focus:bg-muted",
-);
+const navigationMenuTriggerStyle = cva(`
+group/navigation-menu-trigger
+inline-flex
+h-9
+w-max
+items-center
+justify-center
+rounded-lg
+px-4
+py-2
+text-sm
+font-medium
+
+text-white
+bg-transparent
+
+transition-all
+duration-200
+
+hover:bg-primary-dark
+hover:text-white
+hover:scale-105
+
+focus:bg-primary-dark
+focus:text-white
+
+data-popup-open:bg-primary-dark
+data-popup-open:text-white
+
+data-open:bg-primary-dark
+data-open:text-white
+
+focus-visible:ring-2
+focus-visible:ring-white/30
+
+disabled:pointer-events-none
+disabled:opacity-50
+`);
 
 function NavigationMenuTrigger({
   className,
