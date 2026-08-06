@@ -165,7 +165,7 @@ export default function Navbar() {
     hover:scale-[1.03]
   "
         >
-          Entrar em contato
+          Falar com CREAS
         </Link>
       </div>
 
@@ -238,7 +238,7 @@ export default function Navbar() {
             onClick={() => handleRedirect("contact")}
             className="mt-2 rounded-md border border-primary-main px-4 py-2 text-sm font-medium text-primary-main"
           >
-            Entrar em contato
+            Falar com CREAS
           </button>
         </div>
       )}
