@@ -132,7 +132,7 @@ export default function Card({
       <CardComponent className="ring-0 ring-transparent w-full max-w-[360px] bg-transparent shrink-0 overflow-visible">
         <CardHeader>
           <CardTitle
-            className="text-xl font-black break-words"
+            className="text-2xl font-black break-words"
             style={{ color: styles.title }}
           >
             {data.title}
@@ -141,7 +141,7 @@ export default function Card({
             <span className="text-sm text-black/80">{data.date}</span>
           )}
           <CardDescription
-            className="text-xs break-words"
+            className="text-sm break-words"
             style={{ color: styles.description }}
           >
             {data.description}
