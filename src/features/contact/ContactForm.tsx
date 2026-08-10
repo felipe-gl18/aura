@@ -11,6 +11,7 @@ export default function ContactForm() {
 
   const [formValues, setFormValues] = useState({
     name: "",
+    phone: "",
     email: "",
     subject: "",
     message: "",
@@ -42,6 +43,7 @@ export default function ContactForm() {
 
       setFormValues({
         name: "",
+        phone: "",
         email: "",
         subject: "",
         message: "",
@@ -75,6 +77,18 @@ export default function ContactForm() {
               value={formValues.name}
               onChange={handleChange}
               placeholder="Seu nome"
+            />
+          </div>
+
+          <div className="space-y-2">
+            <label className="font-medium text-text">Telefone</label>
+
+            <Input
+              name="phone"
+              type="tel"
+              value={formValues.phone}
+              onChange={handleChange}
+              placeholder="(00) 00000-0000"
             />
           </div>
 
