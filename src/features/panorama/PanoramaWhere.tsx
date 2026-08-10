@@ -1,21 +1,22 @@
+// PanoramaWhere.tsx
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Home, House, Building2 } from "lucide-react";
+import { User, Users, Heart } from "lucide-react";
 
-const locations = [
+const lifeCycle = [
   {
-    icon: Home,
-    title: "Residência da vítima",
-    value: 40.7,
+    icon: User,
+    title: "Adultos",
+    value: 54.5,
   },
   {
-    icon: House,
-    title: "Residência compartilhada",
-    value: 28.2,
+    icon: Users,
+    title: "Jovens",
+    value: 18.7,
   },
   {
-    icon: Building2,
-    title: "Casa do suspeito",
-    value: 5.5,
+    icon: Heart,
+    title: "Idosos",
+    value: 16.3,
   },
 ];
 
@@ -24,16 +25,16 @@ export default function PanoramaWhere() {
     <Card className="border-primary-light shadow-sm">
       <CardHeader>
         <CardTitle className="text-2xl font-bold text-text">
-          Onde a violência acontece
+          Perfil das vítimas por ciclo de vida
         </CardTitle>
 
         <p className="text-sm text-text-secondary">
-          A maioria das denúncias ocorre dentro do ambiente doméstico.
+          Distribuição das notificações por faixa etária em Sobral.
         </p>
       </CardHeader>
 
       <CardContent className="space-y-5">
-        {locations.map(({ icon: Icon, title, value }) => (
+        {lifeCycle.map(({ icon: Icon, title, value }) => (
           <div
             key={title}
             className="flex items-center justify-between rounded-xl border border-primary-light p-4 transition-colors hover:bg-primary-light/40"
@@ -47,7 +48,7 @@ export default function PanoramaWhere() {
                 <h3 className="font-medium text-text">{title}</h3>
 
                 <p className="text-sm text-text-secondary">
-                  Local informado na denúncia.
+                  Faixa etária informada na notificação.
                 </p>
               </div>
             </div>

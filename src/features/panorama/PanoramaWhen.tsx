@@ -1,22 +1,24 @@
+// PanoramaWhen.tsx
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-const timeline = [
+const services = [
   {
-    time: "Mais de 1 ano",
-    value: "21,9%",
+    time: "Atendimentos / Encaminhamentos",
+    value: "37,8%",
     description:
-      "das denúncias referem-se a violências iniciadas há mais de um ano.",
+      "125 casos direcionados a atendimentos e encaminhamentos gerais.",
   },
   {
-    time: "Mais de 5 anos",
-    value: "9%",
-    description: "das vítimas conviviam com a violência há mais de cinco anos.",
+    time: "Pessoas em Situação de Rua",
+    value: "34,4%",
+    description:
+      "114 pessoas atendidas pelo Serviço Especializado para Pessoas em Situação de Rua.",
   },
   {
-    time: "Mais de 10 anos",
-    value: "8,6%",
+    time: "PAEFI",
+    value: "10,6%",
     description:
-      "das denúncias envolvem violências iniciadas há mais de dez anos.",
+      "35 famílias e indivíduos acompanhados pelo Serviço de Proteção e Atendimento Especializado.",
   },
 ];
 
@@ -25,22 +27,22 @@ export default function PanoramaWhen() {
     <Card className="border-primary-light shadow-sm flex-1">
       <CardHeader>
         <CardTitle className="text-2xl font-bold text-text">
-          Quanto tempo até denunciar?
+          Serviços de acompanhamento mais acionados
         </CardTitle>
 
         <p className="text-sm text-text-secondary">
-          Muitas mulheres convivem com a violência por anos antes de buscar
-          ajuda.
+          Distribuição dos encaminhamentos realizados após a notificação
+          inicial.
         </p>
       </CardHeader>
 
       <CardContent>
         <div className="relative ml-4 border-l-2 border-primary-light">
-          {timeline.map((item, index) => (
+          {services.map((item, index) => (
             <div
               key={item.time}
               className={
-                index === timeline.length - 1
+                index === services.length - 1
                   ? "relative pl-8"
                   : "relative mb-8 pl-8"
               }

@@ -1,3 +1,4 @@
+// Panorama.tsx
 import { Icon } from "@iconify/react";
 import PanoramaAction from "./PanoramaAction";
 import PanoramaNumbers from "./PanoramaNumbers";
@@ -19,20 +20,20 @@ export default function Panorama({
         </span>
 
         <h2 className="text-2xl font-black text-text sm:text-3xl">
-          Panorama da Violência Contra a Mulher
+          Panorama da Violência Contra a Mulher em Sobral
         </h2>
 
         <div className="flex flex-col gap-3 w-full sm:flex-row sm:items-center sm:justify-between">
           <p className="text-base text-text-secondary sm:text-lg">
-            Dados oficiais do
-            <span className="font-semibold text-primary">Ligue 180</span> •
-            Janeiro a Julho de 2025
+            Dados oficiais do{" "}
+            <span className="font-semibold text-primary">CEMARIS</span> • Ano de
+            2026
           </p>
           <a
             href="/services"
             className="group flex items-center gap-2 text-sm font-semibold text-primary-main transition-all hover:gap-3"
           >
-            Fonte: Ministério das Mulheres
+            Fonte: Painel CEMARIS
             <Icon
               icon="solar:arrow-right-linear"
               width={18}

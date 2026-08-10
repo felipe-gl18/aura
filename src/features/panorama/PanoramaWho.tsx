@@ -1,30 +1,31 @@
+// PanoramaWho.tsx
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Users, UserRound, Shield } from "lucide-react";
 
 const profile = [
   {
     icon: Heart,
-    value: "44,3%",
-    title: "Mulheres negras",
-    description: "das denúncias registradas",
-  },
-  {
-    icon: Users,
     value: "57,7%",
-    title: "Mulheres heterossexuais",
+    title: "Mulheres cisgênero",
     description: "perfil predominante das vítimas",
   },
   {
+    icon: Users,
+    value: "53,6%",
+    title: "Vítimas pardas",
+    description: "maior parte das notificações por etnia",
+  },
+  {
     icon: UserRound,
-    value: "47,6%",
-    title: "Parceiro ou ex-parceiro",
-    description: "principal autor da violência",
+    value: "54,5%",
+    title: "Vítimas adultas",
+    description: "faixa etária mais atingida",
   },
   {
     icon: Shield,
-    value: "41,4%",
-    title: "Suspeitos negros",
-    description: "entre os identificados",
+    value: "58,3%",
+    title: "Média complexidade",
+    description: "nível de proteção social mais acionado",
   },
 ];
 

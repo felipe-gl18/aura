@@ -1,17 +1,22 @@
+// PanoramaViolenceTypes.tsx
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const violenceTypes = [
   {
-    label: "Violência Física",
-    value: 41.4,
+    label: "Violência Doméstica",
+    value: 57.2,
   },
   {
-    label: "Violência Psicológica",
-    value: 27.9,
+    label: "Pessoa em Situação de Rua",
+    value: 21.0,
   },
   {
-    label: "Violência Sexual",
-    value: 3.6,
+    label: "Exploração Patrimonial",
+    value: 6.0,
+  },
+  {
+    label: "Assédio Moral",
+    value: 5.5,
   },
 ];
 
@@ -20,11 +25,11 @@ export default function PanoramaViolenceTypes() {
     <Card className="border-primary-light shadow-sm flex-1">
       <CardHeader>
         <CardTitle className="text-2xl font-bold text-text">
-          Tipos de violência
+          Tipos de violação mais notificados
         </CardTitle>
 
         <p className="text-sm text-text-secondary">
-          Casos registrados pelo Ligue 180 em contexto de violência doméstica.
+          Casos registrados pelo CEMARIS no município de Sobral em 2026.
         </p>
       </CardHeader>
 
