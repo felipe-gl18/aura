@@ -252,6 +252,13 @@ export default function Navbar() {
           </button>
 
           <button
+            onClick={() => handleRedirect("about")}
+            className="px-2 py-3 text-left text-sm font-medium"
+          >
+            Sobre nós
+          </button>
+
+          <button
             onClick={() => handleRedirect("contact")}
             className="mt-2 rounded-md border border-primary-main px-4 py-2 text-sm font-medium text-primary-main"
           >
