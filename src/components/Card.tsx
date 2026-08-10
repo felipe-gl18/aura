@@ -13,6 +13,11 @@ import { Badge } from "./ui/badge";
 
 type CardVariant = "default" | "organization";
 
+type CardAction = {
+  type: string;
+  value: string;
+};
+
 type CardParams = {
   title: string;
   description?: string;
@@ -25,6 +30,7 @@ type CardParams = {
   icon?: string;
   color?: string;
   subtitle?: string;
+  action?: CardAction;
 
   // highlight
   highlights?: { title: string; description: string; icon: string }[];
@@ -67,14 +73,41 @@ export default function Card({
   const styles = themeStyles[theme];
 
   const handleLink = () => {
-    if (data.path) return navigate(data.path);
-    if (data.link) return window.open(data.link, "_blank");
+    // Internal route
+    if (data.path) {
+      navigate(data.path);
+      return;
+    }
+
+    if (!data.action) {
+      return;
+    }
+
+    const { type, value } = data.action;
+
+    // Phone: opens the device's phone/dialer
+    if (type === "phone") {
+      window.location.href = `tel:${value}`;
+      return;
+    }
+
+    // WhatsApp
+    if (type === "whatsapp") {
+      window.open(`https://wa.me/${value}`, "_blank", "noopener,noreferrer");
+      return;
+    }
+
+    // External website
+    if (type === "external") {
+      window.open(value, "_blank", "noopener,noreferrer");
+    }
   };
 
   if (variant === "organization") {
     return (
       <CardComponent
         className="border-0 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
+        onClick={handleLink}
         style={{
           backgroundColor: `${data.color}15`,
         }}

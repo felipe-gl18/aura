@@ -11,6 +11,11 @@ const images = {
   policia_militar,
 };
 
+type OrganizationAction = {
+  type: string;
+  value: string;
+};
+
 type OrganizationParams = {
   id: string;
   name: string;
@@ -20,7 +25,7 @@ type OrganizationParams = {
   image: string;
   icon: string;
   buttonText: string;
-  link: string;
+  action: OrganizationAction;
   color: string;
   highlights?: { title: string; description: string; icon: string }[];
 };
@@ -46,7 +51,7 @@ export default function Organization({
         title: data.name,
         description: data.description,
         button: data.buttonText,
-        link: data.link,
+        action: data.action,
         icon: data.icon,
         color: data.color,
         subtitle: data.fullName,
