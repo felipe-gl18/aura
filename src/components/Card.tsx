@@ -170,7 +170,7 @@ export default function Card({
           {data.button && (
             <Button
               onClick={handleLink}
-              className="w-full max-w-[252px] h-[44px] mt-[24px] hover:opacity-90"
+              className="w-full max-w-[252px] h-[44px] mt-[24px] hover:opacity-90 cursor-pointer"
               style={{
                 backgroundColor: styles.buttonBg,
                 color: styles.buttonText,
