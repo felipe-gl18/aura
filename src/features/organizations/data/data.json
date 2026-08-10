@@ -8,8 +8,11 @@
     "image": "policia_militar",
     "icon": "solar:siren-bold",
     "color": "#DC2626",
-    "buttonText": "Saiba quando ligar",
-    "link": "https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica",
+    "buttonText": "Ligar 190",
+    "action": {
+      "type": "phone",
+      "value": "190"
+    },
     "highlights": [
       {
         "icon": "solar:clock-circle-bold",
@@ -37,8 +40,11 @@
     "image": "creas",
     "icon": "solar:shield-user-bold",
     "color": "#6C3EB8",
-    "buttonText": "Conheça o CREAS",
-    "link": "https://wa.me/558881132679",
+    "buttonText": "Conversar no WhatsApp",
+    "action": {
+      "type": "whatsapp",
+      "value": "558881132679"
+    },
     "highlights": [
       {
         "icon": "solar:user-heart-bold",
@@ -67,7 +73,10 @@
     "icon": "fluent:gavel-32-filled",
     "color": "#2563EB",
     "buttonText": "Conheça o Juizado",
-    "link": "https://www.tjce.jus.br/",
+    "action": {
+      "type": "external",
+      "value": "https://www.tjce.jus.br/"
+    },
     "highlights": [
       {
         "icon": "solar:shield-check-bold",
@@ -95,8 +104,11 @@
     "image": "ddm",
     "icon": "solar:shield-check-bold",
     "color": "#D97706",
-    "buttonText": "Conheça a DDM",
-    "link": "https://wa.me/5585989597453",
+    "buttonText": "Conversar no WhatsApp",
+    "action": {
+      "type": "whatsapp",
+      "value": "5585989597453"
+    },
     "highlights": [
       {
         "icon": "solar:shield-warning-bold",
