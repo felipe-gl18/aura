@@ -30,11 +30,10 @@ const stats = [
 
 export default function OrganizationsCarousel() {
   return (
-    <div className="relative flex w-full items-center justify-between overflow-hidden bg-primary-main px-4 py-8 lg:px-0 lg:py-0">
-      {" "}
+    <div className="relative flex w-full items-center justify-between overflow-hidden bg-primary-main px-4 py-8 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-center lg:justify-normal lg:gap-x-16 lg:px-16 lg:py-0">
       <Carousel
         opts={{ align: "start" }}
-        className="w-full lg:w-[600px] min-w-0 shrink-0 order-2 lg:order-1"
+        className="order-2 w-full min-w-0 shrink-0 lg:order-none lg:w-full lg:max-w-[600px] lg:justify-self-end"
         plugins={[
           Autoplay({
             delay: 2000,
@@ -57,9 +56,9 @@ export default function OrganizationsCarousel() {
       </Carousel>
       <img
         src={logo}
-        className="order-1 lg:order-2 w-[220px] lg:w-[566px] h-auto shrink-0"
+        className="order-1 h-auto w-[220px] shrink-0 lg:order-none lg:w-[566px] lg:justify-self-center"
       />
-      <div className="order-3 hidden md:flex w-[220px] lg:w-[366px] h-auto shrink-0 lg:mr-[96px] flex-col gap-4">
+      <div className="order-3 hidden w-[220px] h-auto shrink-0 flex-col gap-4 md:flex lg:order-none lg:w-[366px] lg:justify-self-start">
         {stats.map((stat) => (
           <div
             key={stat.label}
