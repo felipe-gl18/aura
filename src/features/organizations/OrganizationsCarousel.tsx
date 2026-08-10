@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import data from "./data/data.json";
-import logo from "@/assets/white_logo.png";
+import logo from "@/assets/solo_logo.png";
 import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
@@ -30,10 +30,10 @@ const stats = [
 
 export default function OrganizationsCarousel() {
   return (
-    <div className="relative flex w-full items-center justify-between overflow-hidden bg-primary-main px-4 py-8 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-center lg:justify-normal lg:gap-x-16 lg:px-16 lg:py-0">
+    <div className="relative flex w-full flex-col items-center gap-8 overflow-hidden bg-gray-200 px-4 py-10 sm:px-6 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-center lg:justify-normal lg:gap-x-16 lg:gap-y-0 lg:px-16 lg:py-0">
       <Carousel
         opts={{ align: "start" }}
-        className="order-2 w-full min-w-0 shrink-0 lg:order-none lg:w-full lg:max-w-[600px] lg:justify-self-end"
+        className="order-2 w-full max-w-[500px] min-w-0 shrink-0 lg:order-none lg:max-w-[600px] lg:justify-self-end"
         plugins={[
           Autoplay({
             delay: 2000,
@@ -48,7 +48,7 @@ export default function OrganizationsCarousel() {
                 data={rest}
                 direction={index % 2 === 0 ? "right" : "left"}
                 showImage={false}
-                theme="light"
+                theme="dark"
               />
             </CarouselItem>
           ))}
@@ -56,27 +56,27 @@ export default function OrganizationsCarousel() {
       </Carousel>
       <img
         src={logo}
-        className="order-1 h-auto w-[220px] shrink-0 lg:order-none lg:w-[566px] lg:justify-self-center"
+        className="order-1 h-auto w-[100px] shrink-0 sm:w-[120px] lg:order-none lg:w-[320px] lg:justify-self-center"
       />
-      <div className="order-3 hidden w-[220px] h-auto shrink-0 flex-col gap-4 md:flex lg:order-none lg:w-[366px] lg:justify-self-start">
+      <div className="order-3 grid w-full max-w-[500px] grid-cols-1 gap-3 sm:grid-cols-3 lg:flex lg:w-[366px] lg:max-w-none lg:flex-col lg:justify-self-start">
         {stats.map((stat) => (
           <div
             key={stat.label}
-            className="flex items-center gap-3 rounded-xl border border-white/15 bg-white/10 p-3 backdrop-blur-sm"
+            className="flex items-center gap-3 rounded-xl border border-black/5 bg-white p-3 shadow-sm"
           >
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/15">
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary-main/10">
               <Icon
                 icon={stat.icon}
                 width={20}
                 height={20}
-                className="text-white"
+                className="text-primary-main"
               />
             </div>
             <div className="min-w-0">
-              <p className="text-lg font-black leading-none text-white">
+              <p className="text-lg font-black leading-none text-gray-900">
                 {stat.value}
               </p>
-              <p className="mt-1 text-xs leading-snug text-white/80 break-words">
+              <p className="mt-1 text-xs leading-snug text-gray-500 break-words">
                 {stat.label}
               </p>
             </div>
