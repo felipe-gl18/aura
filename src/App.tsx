@@ -8,6 +8,7 @@ import Events from "./features/events/Events";
 import Panorama from "./features/panorama/Panorama";
 import Contact from "./features/contact/Contact";
 import Organizations from "./features/organizations/Organizations";
+import About from "./features/about/About";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             element={<Panorama variant="default" />}
           ></Route>
           <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/about" element={<About />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
