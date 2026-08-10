@@ -12,7 +12,7 @@ export default function Footer() {
           <nav className="flex flex-col gap-3 text-sm text-text-secondary">
             <Link
               className="text-primary-light transition-colors hover:text-white"
-              to="/"
+              to="/about"
             >
               Sobre o projeto
             </Link>
