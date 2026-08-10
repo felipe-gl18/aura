@@ -1,23 +1,24 @@
 import { Link } from "react-router-dom";
-import { PhoneCall } from "lucide-react";
+import { PhoneCall, ExternalLink } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-border bg-primary-dark text-white">
-      <div className="mx-auto flex max-w-7xl flex-col gap-12 px-6 py-16 lg:flex-row lg:justify-between">
-        {/* Links */}
+    <footer className="bg-[#512B8A]">
+      <div className="mx-auto grid max-w-7xl gap-10 px-6 py-12 sm:px-10 lg:grid-cols-3 lg:px-20">
+        {/* Projeto */}
         <div>
-          <h3 className="font-semibold text-white py-4">Projeto</h3>
+          <h3 className="py-4 font-semibold text-white">Projeto</h3>
 
-          <nav className="flex flex-col gap-3 text-sm text-text-secondary">
+          <nav className="flex flex-col gap-3 text-sm">
             <Link
-              className="text-primary-light transition-colors hover:text-white"
+              className="text-[#EDE5FA] transition-colors hover:text-white"
               to="/about"
             >
               Sobre o projeto
             </Link>
+
             <Link
-              className="text-primary-light transition-colors hover:text-white"
+              className="text-[#EDE5FA] transition-colors hover:text-white"
               to="/sources"
             >
               Fontes e dados utilizados
@@ -27,49 +28,58 @@ export default function Footer() {
 
         {/* Organizations */}
         <div>
-          <h3 className="font-semibold text-white py-4">Organizações</h3>
+          <h3 className="py-4 font-semibold text-white">Organizações</h3>
 
-          <nav className="flex flex-col gap-3 text-sm text-text-secondary">
-            <Link
-              className="text-primary-light transition-colors hover:text-white"
-              to="/"
+          <nav className="flex flex-col gap-3 text-sm">
+            <a
+              href="https://www.instagram.com/creassobral/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#EDE5FA] transition-colors hover:text-white"
             >
               CREAS
-            </Link>
-            <Link
-              className="text-primary-light transition-colors hover:text-white"
-              to="/"
-            >
-              CRAS
-            </Link>
-            <Link
-              className="text-primary-light transition-colors hover:text-white"
-              to="/"
-            >
-              Delegacia da Mulher
-            </Link>
+            </a>
           </nav>
         </div>
 
         {/* Emergency */}
         <div>
-          <h3 className="flex gap-4 font-semibold text-white py-4">
+          <h3 className="flex items-center gap-3 py-4 font-semibold text-white">
             <PhoneCall className="h-5 w-5" />
             Precisa de ajuda?
           </h3>
 
-          <div className="space-y-3 text-sm">
-            <p className="text-primary-light/90">Ligue 190</p>
+          <div className="flex flex-col gap-3 text-sm">
+            <a
+              href="tel:190"
+              className="flex items-center gap-2 text-[#EDE5FA] transition-colors hover:text-white"
+            >
+              Ligue 190
+              <ExternalLink className="h-4 w-4" />
+            </a>
 
-            <p className="text-primary-light/90">Disque 180</p>
+            <a
+              href="tel:180"
+              className="flex items-center gap-2 text-[#EDE5FA] transition-colors hover:text-white"
+            >
+              Disque 180
+              <ExternalLink className="h-4 w-4" />
+            </a>
 
-            <p className="text-primary-light/90">Disque 100</p>
+            <a
+              href="tel:100"
+              className="flex items-center gap-2 text-[#EDE5FA] transition-colors hover:text-white"
+            >
+              Disque 100
+              <ExternalLink className="h-4 w-4" />
+            </a>
           </div>
         </div>
       </div>
 
-      <div className=" border-t border-primary-light/20 text-primary-light/80">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-6 py-6 text-sm  md:flex-row">
+      {/* Bottom */}
+      <div className="border-t border-[#EDE5FA]/20 text-[#EDE5FA]/80">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-6 py-6 text-center text-sm md:flex-row md:text-left">
           <span>
             © {new Date().getFullYear()} AURA. Todos os direitos reservados.
           </span>
