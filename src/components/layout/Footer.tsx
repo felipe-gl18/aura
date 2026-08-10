@@ -18,13 +18,7 @@ export default function Footer() {
             </Link>
             <Link
               className="text-primary-light transition-colors hover:text-white"
-              to="/"
-            >
-              Como funciona
-            </Link>
-            <Link
-              className="text-primary-light transition-colors hover:text-white"
-              to="/"
+              to="/sources"
             >
               Fontes e dados utilizados
             </Link>

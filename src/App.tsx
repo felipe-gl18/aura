@@ -9,6 +9,7 @@ import Panorama from "./features/panorama/Panorama";
 import Contact from "./features/contact/Contact";
 import Organizations from "./features/organizations/Organizations";
 import About from "./features/about/About";
+import Sources from "./features/sources/Sources";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           ></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/about" element={<About />}></Route>
+          <Route path="/sources" element={<Sources />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
