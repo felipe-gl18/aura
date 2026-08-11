@@ -1,6 +1,5 @@
 {
   "start": {
-    "message": "Olá! Vou ajudar você a encontrar o atendimento mais adequado. Responda algumas perguntas.",
     "question": "Você ou alguém está em perigo neste momento?",
     "options": [
       {
@@ -19,7 +18,7 @@
     "options": [
       {
         "label": "Sim",
-        "organization": "190"
+        "result": "ddm"
       },
       {
         "label": "Não",
@@ -37,7 +36,7 @@
       },
       {
         "label": "Preciso de apoio para minha família",
-        "organization": "cras"
+        "result": "creas"
       },
       {
         "label": "Quero apenas conhecer meus direitos",
@@ -51,7 +50,7 @@
     "options": [
       {
         "label": "Sim",
-        "organization": "ddm"
+        "result": "ddm"
       },
       {
         "label": "Ainda não",
@@ -65,11 +64,11 @@
     "options": [
       {
         "label": "Sim",
-        "organization": "creas"
+        "result": "creas"
       },
       {
         "label": "Não tenho certeza",
-        "next": "guidance"
+        "result": "creas"
       }
     ]
   },
@@ -79,15 +78,15 @@
     "options": [
       {
         "label": "Conversar com uma equipe especializada",
-        "organization": "creas"
+        "result": "creas"
       },
       {
         "label": "Orientação sobre benefícios sociais",
-        "organization": "cras"
+        "result": "creas"
       },
       {
         "label": "Registrar denúncia",
-        "organization": "ddm"
+        "result": "ddm"
       }
     ]
   }

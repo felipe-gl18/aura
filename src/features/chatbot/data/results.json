@@ -1,9 +1,4 @@
 {
-  "190": {
-    "title": "Acione a Polícia Militar",
-    "message": "Como existe risco imediato, o mais importante é garantir sua segurança. Ligue para o 190 imediatamente. Após o atendimento emergencial, você poderá procurar outros serviços da rede de proteção."
-  },
-
   "ddm": {
     "title": "Delegacia de Defesa da Mulher",
     "message": "A DDM poderá registrar o boletim de ocorrência, solicitar medidas protetivas e encaminhar você para outros serviços da rede de apoio."
@@ -12,10 +7,5 @@
   "creas": {
     "title": "CREAS",
     "message": "O CREAS oferece acolhimento, acompanhamento psicossocial e orientação especializada para pessoas em situação de violência."
-  },
-
-  "cras": {
-    "title": "CRAS",
-    "message": "O CRAS pode orientar sobre benefícios sociais, programas assistenciais e fortalecer o apoio à sua família."
   }
 }
