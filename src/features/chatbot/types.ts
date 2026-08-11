@@ -25,3 +25,20 @@ export interface ChatMessage {
   text: string;
   description?: string;
 }
+
+export type ChatState =
+  | "flow"
+  | "ask_name"
+  | "ask_channel"
+  | "ask_email"
+  | "ask_whatsapp"
+  | "ask_immediate"
+  | "redirect"
+  | "finished";
+
+export interface UserData {
+  name: string;
+  email: string;
+  whatsapp: string;
+  preferredChannel: "email" | "whatsapp" | null;
+}
