@@ -69,7 +69,7 @@
 =========================== */
 
 :root {
-  --background: #f7f7fa;
+  --background: #ffffff;
   --foreground: #2d2d2d;
 
   --card: #ffffff;
@@ -149,4 +149,31 @@
   html {
     @apply font-sans;
   }
+}
+
+/* ===========================
+   AURA SCROLLBAR
+   =========================== */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #6c3eb8 #ede5fa;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ede5fa;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #6c3eb8;
+  border-radius: 9999px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #512b8a;
 }
