@@ -38,7 +38,7 @@ export default function ChatBotWrapper() {
 
       <SheetContent
         side="right"
-        className="flex flex-col gap-0 p-0 data-[side=right]:w-full data-[side=right]:sm:w-3/4 data-[side=right]:sm:max-w-sm"
+        className="flex flex-col gap-0 p-0 data-[side=right]:w-full data-[side=right]:sm:w-3/4 data-[side=right]:sm:max-w-sm py-4"
       >
         <div className="border-b px-4 py-4 sm:px-5">
           <div className="flex items-center gap-3">
