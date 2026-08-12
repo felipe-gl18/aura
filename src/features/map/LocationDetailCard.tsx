@@ -1,6 +1,7 @@
 import { Icon } from "@iconify/react";
 import type { ServiceLocation } from "@/types/service-location";
 import { categoryStyles } from "@/types/service-location";
+import { Button } from "@/components/ui/button";
 
 export default function LocationDetailCard({
   location,
@@ -16,7 +17,7 @@ export default function LocationDetailCard({
   const style = categoryStyles[location.category];
 
   return (
-    <div className="pointer-events-auto max-h-[70vh] w-full overflow-y-auto rounded-t-2xl bg-surface p-4 shadow-xl sm:max-h-none sm:w-[320px] sm:rounded-2xl sm:p-5">
+    <div className="pointer-events-auto mx-auto max-h-[65%] w-[80%] overflow-y-auto rounded-t-2xl bg-surface p-4 shadow-xl sm:mx-0 sm:max-h-none sm:w-[320px] sm:rounded-2xl sm:p-5">
       <div className="flex items-start justify-between gap-3">
         <div className="flex min-w-0 items-center gap-3">
           <div
@@ -65,7 +66,6 @@ export default function LocationDetailCard({
           {location.distanceKm.toLocaleString("pt-BR")} km
         </span>
       </div>
-
       <div className="mt-4 flex flex-col gap-3 border-t border-primary-light pt-4 text-sm">
         <div className="flex items-start gap-2 text-text">
           <Icon
@@ -103,7 +103,6 @@ export default function LocationDetailCard({
           </div>
         )}
       </div>
-
       {location.services && location.services.length > 0 && (
         <div className="mt-4 border-t border-primary-light pt-4">
           <p className="mb-2 text-xs font-semibold text-text-secondary">
@@ -121,21 +120,24 @@ export default function LocationDetailCard({
           </div>
         </div>
       )}
-
       <div className="mt-4 flex flex-col gap-2">
-        <button
+        <Button
+          aria-label="Como chegar ao destino"
           onClick={() => onDirections?.(location)}
-          className="flex h-11 items-center justify-center gap-2 rounded-xl bg-primary-main text-sm font-semibold text-white transition hover:opacity-90"
+          className="h-11"
         >
           <Icon icon="solar:routing-linear" width={18} height={18} />
           Como chegar
-        </button>
-        <button
+        </Button>
+        <Button
+          aria-label="Detalhes sobre local"
+          variant="outline"
+          disabled={true}
           onClick={() => onDetails?.(location)}
-          className="flex h-11 items-center justify-center rounded-xl border border-primary-main text-sm font-semibold text-primary-main transition hover:bg-primary-light"
+          className="h-11 border-2 border-primary-main text-primary-main hover:bg-primary-light"
         >
           Ver detalhes
-        </button>
+        </Button>
       </div>
     </div>
   );
