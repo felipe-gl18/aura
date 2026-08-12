@@ -1,0 +1,318 @@
+[
+  {
+    "id": "saude-01",
+    "name": "Centro de Saúde da Família do Centro",
+    "subtitle": "Centro de Saúde da Família",
+    "category": "saude",
+    "icon": "healthicons:health-worker-form-outline",
+    "address": "CE-440, 670 - Centro, Sobral - CE, 62011-060",
+    "phone": "não informado",
+    "hours": "07h às 22h",
+    "distanceKm": 7654,
+    "isOpen": true,
+    "services": [
+      "Atenção básica",
+      "Consultas",
+      "Vacinação",
+      "Atendimento de enfermagem"
+    ],
+    "lat": -3.6873297277572177,
+    "lng": -40.35252172464926
+  },
+  {
+    "id": "saude-02",
+    "name": "Centro de Saúde da Família do Sinhá Sabóia",
+    "subtitle": "Centro de Saúde da Família",
+    "category": "saude",
+    "icon": "healthicons:health-worker-form-outline",
+    "address": "R. Inês de Vasconcelos, s/n - Cohab I, Sobral - CE, 62050-580",
+    "phone": "(88) 3614-3364",
+    "hours": "07h às 19h",
+    "distanceKm": 7654,
+    "isOpen": true,
+    "services": [
+      "Atenção básica",
+      "Consultas",
+      "Vacinação",
+      "Saúde da família"
+    ],
+    "lat": -3.7089062626260954,
+    "lng": -40.3331981901473
+  },
+  {
+    "id": "saude-03",
+    "name": "Posto de Saúde Cohab III",
+    "subtitle": "Centro de Saúde da Família Inácio Rodrigues Lima",
+    "category": "saude",
+    "icon": "healthicons:health-worker-form-outline",
+    "address": "R. Raimundo Hubner Mendes Carneiro, 66 - Cohab III, Sobral - CE, 62030-520",
+    "phone": "(88) 3614-5416",
+    "hours": "07h às 19h",
+    "distanceKm": 7654,
+    "isOpen": true,
+    "services": [
+      "Atenção básica",
+      "Saúde da família",
+      "Atendimento médico",
+      "Saúde bucal"
+    ],
+    "lat": -3.665303024094143,
+    "lng": -40.372770045967
+  },
+  {
+    "id": "saude-04",
+    "name": "PSF Estação",
+    "subtitle": "Centro de Saúde da Família Estação",
+    "category": "saude",
+    "icon": "healthicons:health-worker-form-outline",
+    "address": "R. Pintor Lemos, 997 - Centro, Sobral - CE, 62010-720",
+    "phone": "(88) 3611-1510",
+    "hours": "não informado",
+    "distanceKm": 7654,
+    "isOpen": false,
+    "services": ["Atenção básica", "Consultas", "Atendimento de enfermagem"],
+    "lat": -3.6888276443427515,
+    "lng": -40.357620759458705
+  },
+  {
+    "id": "saude-05",
+    "name": "Centro de Saúde da Família Alto do Cristo",
+    "subtitle": "Centro de Saúde da Família Maria Florêncio de Assis Romão",
+    "category": "saude",
+    "icon": "healthicons:health-worker-form-outline",
+    "address": "Rua Maria Monte, s/n - Alto do Cristo, Sobral - CE",
+    "phone": "(88) 3614-5758",
+    "hours": "07h às 19h",
+    "distanceKm": 7654,
+    "isOpen": true,
+    "services": [
+      "Atenção básica",
+      "Saúde da família",
+      "Consultas",
+      "Vacinação"
+    ],
+    "lat": -3.682564193642943,
+    "lng": -40.36020646369674
+  },
+  {
+    "id": "saude-06",
+    "name": "Centro de Saúde da Família Alto da Brasília",
+    "subtitle": "Centro de Saúde da Família Professora Norma Soares",
+    "category": "saude",
+    "icon": "healthicons:health-worker-form-outline",
+    "address": "Rua Pedro Gomes, 500 - Alto da Brasília, Sobral - CE",
+    "phone": "(88) 3695-4231",
+    "hours": "07h às 19h",
+    "distanceKm": 7654,
+    "isOpen": true,
+    "services": [
+      "Atenção básica",
+      "Saúde da família",
+      "Saúde bucal",
+      "Vacinação"
+    ],
+    "lat": -3.673837252551036,
+    "lng": -40.34534251649187
+  },
+  {
+    "id": "saude-07",
+    "name": "Centro de Saúde da Família CAIC",
+    "subtitle": "Centro de Saúde da Família Francisco Moura Vieira",
+    "category": "saude",
+    "icon": "healthicons:health-worker-form-outline",
+    "address": "Av. Dr. Paulo Sanford, s/n - Expectativa, Sobral - CE",
+    "phone": "(88) 3695-4198",
+    "hours": "07h às 19h",
+    "distanceKm": 7654,
+    "isOpen": true,
+    "services": [
+      "Atenção básica",
+      "Saúde da família",
+      "Consultas",
+      "Saúde bucal"
+    ],
+    "lat": -3.6737568040435673,
+    "lng": -40.345339229782894
+  },
+  {
+    "id": "saude-08",
+    "name": "Centro de Saúde da Família Caiçara",
+    "subtitle": "Centro de Saúde da Família João Abdelmoumem Melo",
+    "category": "saude",
+    "icon": "healthicons:health-worker-form-outline",
+    "address": "Rua Jandáia, 55 - Residencial Nova Caiçara, Sobral - CE",
+    "phone": "não informado",
+    "hours": "07h às 19h",
+    "distanceKm": 7654,
+    "isOpen": true,
+    "services": [
+      "Atenção básica",
+      "Saúde da família",
+      "Consultas",
+      "Vacinação"
+    ],
+    "lat": -3.666804610804392,
+    "lng": -40.37560289200006
+  },
+  {
+    "id": "saude-09",
+    "name": "Centro de Saúde da Família Campo dos Velhos",
+    "subtitle": "Centro de Saúde da Família Terezinha Neves Vasconcelos",
+    "category": "saude",
+    "icon": "healthicons:health-worker-form-outline",
+    "address": "Rua Coronel Mont'Alverne, s/n - Campo dos Velhos, Sobral - CE",
+    "phone": "não informado",
+    "hours": "07h às 19h",
+    "distanceKm": 7654,
+    "isOpen": true,
+    "services": [
+      "Atenção básica",
+      "Saúde da família",
+      "Consultas",
+      "Enfermagem"
+    ],
+    "lat": -3.6801992770930516,
+    "lng": -40.352133765638655
+  },
+  {
+    "id": "saude-10",
+    "name": "Centro de Saúde da Família Cohab II",
+    "subtitle": "Centro de Saúde da Família Dr. Guarani Mont'Alverne",
+    "category": "saude",
+    "icon": "healthicons:health-worker-form-outline",
+    "address": "Rua Artemísia, s/n - Cohab II, Sobral - CE",
+    "phone": "(88) 3611-3199",
+    "hours": "07h às 19h",
+    "distanceKm": 7654,
+    "isOpen": true,
+    "services": [
+      "Atenção básica",
+      "Saúde da família",
+      "Consultas",
+      "Saúde bucal"
+    ],
+    "lat": -3.7032683676293825,
+    "lng": -40.3313797613113
+  },
+  {
+    "id": "saude-11",
+    "name": "UPA 24h",
+    "subtitle": "Unidade de Pronto Atendimento Hugo Mendes Parente",
+    "category": "saude",
+    "icon": "healthicons:ambulance",
+    "address": "Av. Moacir Lima Feijão, 1841 - Gerardo Cristino, Sobral - CE, 62040-743",
+    "phone": "(88) 3611-7758",
+    "hours": "24 horas, todos os dias",
+    "distanceKm": 7654,
+    "isOpen": true,
+    "services": [
+      "Urgência e emergência",
+      "Atendimento médico",
+      "Atendimento pediátrico",
+      "Observação"
+    ],
+    "lat": -3.706916119073573,
+    "lng": -40.34193591768555
+  },
+  {
+    "id": "saude-12",
+    "name": "Santa Casa de Misericórdia de Sobral",
+    "subtitle": "Hospital Geral",
+    "category": "saude",
+    "icon": "healthicons:hospital-24",
+    "address": "R. Antônio Crisóstomo de Melo, 919 - Centro, Sobral - CE, 62010-550",
+    "phone": "(88) 3112-0400",
+    "hours": "24 horas, todos os dias",
+    "distanceKm": 7654,
+    "isOpen": true,
+    "services": [
+      "Atendimento hospitalar",
+      "Urgência e emergência",
+      "Internação",
+      "Cirurgias"
+    ],
+    "lat": -3.6934249281089104,
+    "lng": -40.35942526760693
+  },
+  {
+    "id": "saude-13",
+    "name": "Hospital Regional Norte",
+    "subtitle": "Hospital Regional Norte - HRN",
+    "category": "saude",
+    "icon": "healthicons:hospital-24",
+    "address": "Av. John Sanford, 1505 - José Euclides, Sobral - CE, 62030-340",
+    "phone": "(88) 3677-9300",
+    "hours": "24 horas, todos os dias",
+    "distanceKm": 7654,
+    "isOpen": true,
+    "services": [
+      "Urgência e emergência",
+      "Alta complexidade",
+      "Internação",
+      "Cirurgias",
+      "Atendimento especializado"
+    ],
+    "lat": -3.676409858782434,
+    "lng": -40.36795909895376
+  },
+  {
+    "id": "saude-14",
+    "name": "Hospital do Coração de Sobral",
+    "subtitle": "Hospital especializado em cardiologia",
+    "category": "saude",
+    "icon": "healthicons:heart",
+    "address": "Av. Gerardo Rangel, 715 - Jocely Dantas, Sobral - CE, 62042-240",
+    "phone": "(88) 3677-8500",
+    "hours": "24 horas, todos os dias",
+    "distanceKm": 7654,
+    "isOpen": true,
+    "services": [
+      "Atendimento cardiológico",
+      "Internação",
+      "Urgência",
+      "Exames"
+    ],
+    "lat": -3.6856445633939927,
+    "lng": -40.33684437480298
+  },
+  {
+    "id": "saude-15",
+    "name": "Policlínica Bernardo Félix da Silva",
+    "subtitle": "Policlínica Regional de Sobral",
+    "category": "saude",
+    "icon": "healthicons:health-worker-form-outline",
+    "address": "Av. Monsenhor José Aloísio Pinto, 481 - Dom Expedito, Sobral - CE, 62050-255",
+    "phone": "(88) 3614-3156",
+    "hours": "07h às 17h",
+    "distanceKm": 7654,
+    "isOpen": true,
+    "services": [
+      "Atendimento especializado",
+      "Exames",
+      "Consultas especializadas",
+      "Reabilitação"
+    ],
+    "lat": -3.7075097750311863,
+    "lng": -40.342790645966936
+  },
+  {
+    "id": "saude-16",
+    "name": "Hospital Municipal Estevam Ponte",
+    "subtitle": "Hospital Municipal",
+    "category": "saude",
+    "icon": "healthicons:hospital-24",
+    "address": "R. João Barbosa, 401 - Centro, Sobral - CE, 62010-220",
+    "phone": "(85) 3771-1501",
+    "hours": "24 horas, todos os dias",
+    "distanceKm": 7654,
+    "isOpen": true,
+    "services": [
+      "Atendimento hospitalar",
+      "Urgência e emergência",
+      "Internação",
+      "Atendimento médico"
+    ],
+    "lat": -3.6833574294926814,
+    "lng": -40.34657104596707
+  }
+]
