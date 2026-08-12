@@ -34,7 +34,11 @@ export default function ContactForm() {
     try {
       setLoading(true);
 
-      await sendEmail(formValues);
+      await sendEmail({
+        ...formValues,
+        preferredChannel: "email", // since its the contact form, we can hardcode the preferred channel value here
+        organization: "creas", // since its the contact form for creas, we can hardcode the organization value here
+      });
 
       toast.success(
         "Sua mensagem foi enviada. Logo a equipe CREAS entrará com contato",
