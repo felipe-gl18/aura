@@ -6,23 +6,27 @@ export default function Contact() {
   return (
     <section className="mx-auto w-full max-w-7xl px-4 py-12 sm:px-8 lg:py-20">
       {/* Banner */}
-      <div className="relative mb-12 h-[260px] overflow-hidden rounded-3xl lg:h-[320px]">
-        <img src={creas} alt="CREAS" className="h-full w-full object-cover" />
+      <div className="relative mb-12 min-h-[280px] overflow-hidden rounded-3xl sm:min-h-[300px] lg:h-[320px] lg:min-h-0">
+        <img
+          src={creas}
+          alt="CREAS"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
 
         {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-primary-main/85 via-primary-main/60 to-primary-main/25" />
 
         {/* Conteúdo */}
-        <div className="absolute inset-0 flex flex-col justify-center px-8 lg:px-14">
-          <span className="mb-4 w-fit rounded-full bg-white/20 px-4 py-1 text-sm font-medium text-white backdrop-blur-sm">
+        <div className="relative flex min-h-[280px] flex-col justify-center px-5 py-8 sm:min-h-[300px] sm:px-8 lg:min-h-0 lg:px-14">
+          <span className="mb-3 w-fit rounded-full bg-white/20 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm sm:mb-4 sm:px-4 sm:text-sm">
             Centro de Referência Especializado
           </span>
 
-          <h2 className="max-w-2xl text-3xl font-bold text-white lg:text-5xl">
+          <h2 className="max-w-2xl text-xl font-bold leading-tight text-white sm:text-3xl lg:text-5xl">
             Estamos aqui para acolher e orientar você.
           </h2>
 
-          <p className="mt-4 max-w-xl text-base leading-7 text-white/90">
+          <p className="mt-3 max-w-xl text-sm leading-6 text-white/90 sm:mt-4 sm:text-base sm:leading-7">
             O CREAS oferece atendimento especializado, orientação e apoio às
             mulheres em situação de violência. Você não está sozinha.
           </p>
