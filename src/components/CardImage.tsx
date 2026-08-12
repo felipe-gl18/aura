@@ -9,7 +9,7 @@ export default function CardImage({
     <img
       src={image}
       alt={name}
-      className="w-[447px] h-auto shrink-0 rounded-md"
+      className="block w-full h-auto shrink-0 rounded-md"
     />
   );
 }

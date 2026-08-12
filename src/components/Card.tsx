@@ -158,7 +158,15 @@ export default function Card({
       }`}
     >
       {showImage && image && (
-        <div className="w-full max-w-[280px] sm:max-w-[360px] lg:w-[447px] lg:max-w-none lg:shrink-0">
+        <div className="relative isolate w-full max-w-[280px] sm:max-w-[360px] lg:w-[447px] lg:max-w-none lg:shrink-0">
+          <div
+            aria-hidden="true"
+            className={`absolute inset-0 -z-10 rounded-2xl bg-primary-light transition-transform ${
+              direction === "left"
+                ? "translate-x-4 translate-y-4 sm:translate-x-5 sm:translate-y-5"
+                : "-translate-x-4 translate-y-4 sm:-translate-x-5 sm:translate-y-5"
+            }`}
+          />
           <CardImage image={image} name={data.title} />
         </div>
       )}
