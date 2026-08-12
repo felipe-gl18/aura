@@ -1,0 +1,129 @@
+<svg
+  width="1728"
+  height="760"
+  viewBox="0 0 1728 760"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  role="img"
+  aria-hidden="true"
+>
+  <title>AURA hero background</title>
+  <desc>
+    Fundo decorativo com curvas animadas inspiradas no símbolo AURA.
+  </desc>
+
+  <rect width="1728" height="760" fill="#FAF8FF" />
+
+  <!-- Grande arco externo -->
+  <path
+    d="M -80 560
+       C 260 200, 760 40, 1180 220
+       C 1480 350, 1620 220, 1808 60"
+    stroke="#EDE5FA"
+    stroke-width="120"
+    stroke-linecap="round"
+    fill="none"
+    opacity="0.55"
+  >
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="0 0; 25 12; 0 0; -20 -8; 0 0"
+      dur="18s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="
+        0.42 0 0.58 1;
+        0.42 0 0.58 1;
+        0.42 0 0.58 1;
+        0.42 0 0.58 1
+      "
+    />
+  </path>
+
+  <!-- Segundo arco -->
+  <path
+    d="M -120 660
+       C 240 340, 720 160, 1140 340
+       C 1440 470, 1600 360, 1820 200"
+    stroke="#EDE5FA"
+    stroke-width="2"
+    stroke-linecap="round"
+    fill="none"
+    opacity="0.9"
+  >
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="0 0; -18 10; 0 0; 22 -8; 0 0"
+      dur="14s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="
+        0.42 0 0.58 1;
+        0.42 0 0.58 1;
+        0.42 0 0.58 1;
+        0.42 0 0.58 1
+      "
+    />
+  </path>
+
+  <!-- Terceiro arco inferior -->
+  <path
+    d="M -60 760
+       C 320 560, 820 480, 1220 600
+       C 1480 680, 1620 640, 1808 540"
+    stroke="#F4EFFB"
+    stroke-width="180"
+    stroke-linecap="round"
+    fill="none"
+    opacity="0.6"
+  >
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="0 0; 20 -10; 0 0; -15 8; 0 0"
+      dur="22s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="
+        0.42 0 0.58 1;
+        0.42 0 0.58 1;
+        0.42 0 0.58 1;
+        0.42 0 0.58 1
+      "
+    />
+  </path>
+
+  <!-- Pontos decorativos -->
+  <circle
+    cx="220"
+    cy="140"
+    r="4"
+    fill="#D9C8F2"
+    opacity="0.7"
+  />
+
+  <circle
+    cx="900"
+    cy="620"
+    r="3"
+    fill="#D9C8F2"
+    opacity="0.6"
+  />
+
+  <circle
+    cx="1520"
+    cy="420"
+    r="5"
+    fill="#6C3EB8"
+    opacity="0.25"
+  >
+    <animate
+      attributeName="opacity"
+      values="0.15;0.35;0.15"
+      dur="4s"
+      repeatCount="indefinite"
+    />
+  </circle>
+</svg>
