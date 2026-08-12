@@ -150,6 +150,7 @@ export default function Sources() {
                     </p>
 
                     <button
+                      aria-label="Acessar fonte"
                       type="button"
                       className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#6C3EB8] transition group-hover:gap-3"
                     >

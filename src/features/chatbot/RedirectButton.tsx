@@ -4,6 +4,7 @@ import { MessageCircle } from "lucide-react";
 export default function RedirectButton({ href }: { href: string }) {
   return (
     <Button
+      aria-label="Ir para o whatsapp"
       variant="outline"
       size="lg"
       onClick={() => window.open(href, "_blank")}

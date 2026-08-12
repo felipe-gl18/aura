@@ -24,6 +24,7 @@ export default function PanoramaAction() {
 
           <div className="flex flex-wrap gap-4">
             <Button
+              aria-label="Ligar 180"
               size="lg"
               className="bg-white text-primary hover:bg-primary-light"
             >
@@ -32,6 +33,7 @@ export default function PanoramaAction() {
             </Button>
 
             <Button
+              aria-label="Rede de apoio"
               size="lg"
               variant="outline"
               className="border-white bg-transparent text-white hover:bg-white hover:text-primary"

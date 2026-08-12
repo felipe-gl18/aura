@@ -213,6 +213,7 @@ export default function Card({
           </CardDescription>
           {data.button && (
             <Button
+              aria-label={data.button}
               onClick={handleLink}
               className="w-full max-w-[252px] h-[44px] mt-[24px] hover:opacity-90 cursor-pointer"
               style={{

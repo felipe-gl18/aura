@@ -12,6 +12,7 @@ export default function ChatOptions({
     <div className="flex flex-wrap justify-end gap-2">
       {options.map((option) => (
         <Button
+          aria-label={`Selecionar ${option.label}`}
           key={option.label}
           variant="outline"
           size="sm"

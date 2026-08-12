@@ -19,6 +19,7 @@ function NearbyServiceCard({
 
   return (
     <button
+      aria-label={location.name}
       onClick={() => onClick?.(location)}
       className="flex w-full shrink-0 flex-col gap-2.5 rounded-2xl border border-primary-light bg-surface p-3.5 text-left transition hover:-translate-y-0.5 hover:shadow-md sm:gap-3 sm:p-4"
     >

@@ -29,7 +29,11 @@ export default function Navbar() {
     <div className="relative flex items-center justify-between bg-primary-main px-[26px] py-[26px] shadow-sm">
       {/* Logo — sempre visível */}
       <Link to="home" onClick={() => setMobileOpen(false)}>
-        <img src={Logo} className="h-[64px] w-auto lg:h-[84px] lg:w-[126px]" />
+        <img
+          src={Logo}
+          alt="AURA logo"
+          className="h-[64px] w-auto lg:h-[84px] lg:w-[126px]"
+        />
       </Link>
 
       {/* ---------- MENU DESKTOP (lg e acima) ---------- */}
@@ -262,6 +266,7 @@ export default function Navbar() {
           />
 
           <button
+            aria-label="Panorama"
             onClick={() => handleRedirect("panorama")}
             className="px-2 py-3 text-left text-sm font-medium"
           >
@@ -269,6 +274,7 @@ export default function Navbar() {
           </button>
 
           <button
+            aria-label="Sobre nós"
             onClick={() => handleRedirect("about")}
             className="px-2 py-3 text-left text-sm font-medium"
           >
@@ -276,6 +282,7 @@ export default function Navbar() {
           </button>
 
           <button
+            aria-label="Mapa"
             onClick={() => handleRedirect("map")}
             className="px-2 py-3 text-left text-sm font-medium"
           >
@@ -283,6 +290,7 @@ export default function Navbar() {
           </button>
 
           <button
+            aria-label="Falar com CREAS"
             onClick={() => handleRedirect("contact")}
             className="mt-2 rounded-md border border-primary-main px-4 py-2 text-sm font-medium text-primary-main"
           >
@@ -310,6 +318,7 @@ function MobileSection({
   return (
     <div className="border-b border-muted">
       <button
+        aria-label={isOpen ? `Fechar ${label}` : `Abrir ${label}`}
         onClick={onToggle}
         className="flex w-full items-center justify-between px-2 py-3 text-left text-sm font-medium"
         aria-expanded={isOpen}
@@ -325,6 +334,7 @@ function MobileSection({
           {items.map((item) => (
             <li key={item.id}>
               <button
+                aria-label={`Ir para ${item.title}`}
                 onClick={() => onNavigate(item.href)}
                 className="w-full py-2 text-left text-sm text-muted-foreground"
               >

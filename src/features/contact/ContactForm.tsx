@@ -132,6 +132,7 @@ export default function ContactForm() {
           </div>
 
           <Button
+            aria-label="Enviar formulário de contato"
             type="submit"
             disabled={loading}
             className="w-full bg-primary hover:bg-primary-dark h-[44px]"

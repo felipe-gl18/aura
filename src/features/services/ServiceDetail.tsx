@@ -144,6 +144,7 @@ export default function ServiceDetail() {
               </div>
 
               <Button
+                aria-label={`Saiba mais sobre ${serviceData.name}`}
                 onClick={handleRedirect}
                 className="group h-12 w-full shrink-0 bg-white px-6 font-bold text-primary-dark hover:bg-primary-light md:w-auto"
               >

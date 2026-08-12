@@ -33,6 +33,7 @@ export default function ChatInput({
       />
 
       <button
+        aria-label="Enviar dado"
         type="submit"
         disabled={!value.trim()}
         className="shrink-0 rounded-xl bg-purple-600 px-3 py-2.5 text-sm font-medium text-white transition hover:bg-purple-700 disabled:cursor-not-allowed disabled:opacity-50 sm:px-4 sm:py-3"

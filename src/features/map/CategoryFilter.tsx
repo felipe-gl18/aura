@@ -30,6 +30,7 @@ export default function CategoryFilter({
   return (
     <div className="flex min-w-0 gap-1.5 overflow-x-auto pb-1 sm:gap-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
       <button
+        aria-label="Todos"
         onClick={() => onChange("all")}
         className={`flex shrink-0 items-center gap-1.5 rounded-full px-3 py-2 text-xs font-bold transition sm:gap-2 sm:px-4 sm:py-2.5 sm:text-sm ${
           value === "all"
@@ -52,6 +53,7 @@ export default function CategoryFilter({
 
         return (
           <button
+            aria-label={`Filtrar ${category}`}
             key={category}
             onClick={() => onChange(category)}
             className={`flex shrink-0 items-center gap-1.5 rounded-full px-3 py-2 text-xs font-bold transition sm:gap-2 sm:px-4 sm:py-2.5 sm:text-sm ${
