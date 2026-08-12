@@ -10,6 +10,7 @@ import Contact from "./features/contact/Contact";
 import Organizations from "./features/organizations/Organizations";
 import About from "./features/about/About";
 import Sources from "./features/sources/Sources";
+import Map from "./features/map/Map";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/sources" element={<Sources />}></Route>
+          <Route path="/map" element={<Map />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
