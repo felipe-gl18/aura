@@ -1,12 +1,17 @@
 import { Icon } from "@iconify/react";
 import data from "./data/data.json";
 import Service from "./Service";
+import { useServicePath } from "@/hooks/useServicePath";
 
 export default function Services({
   variant,
 }: {
   variant: "default" | "basic";
 }) {
+  const { containerRef, path, size } = useServicePath<HTMLDivElement>(
+    "[data-service-image]",
+  );
+
   return (
     <section className="p-6 sm:p-12 lg:p-[96px]">
       {variant === "basic" && (
@@ -32,7 +37,28 @@ export default function Services({
           </a>
         </div>
       )}
-      <div className="flex flex-col items-center gap-8">
+
+      <div
+        ref={containerRef}
+        className="relative isolate flex flex-col items-center gap-8"
+      >
+        {path && (
+          <svg
+            className="pointer-events-none absolute inset-0 -z-10 hidden lg:block"
+            width={size.width}
+            height={size.height}
+          >
+            <path
+              d={path}
+              fill="none"
+              stroke="var(--color-primary-light)"
+              strokeWidth={3}
+              strokeLinecap="round"
+              strokeDasharray="10 10"
+            />
+          </svg>
+        )}
+
         {data.map((item, index) => (
           <Service
             key={item.id}

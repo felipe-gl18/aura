@@ -158,7 +158,10 @@ export default function Card({
       }`}
     >
       {showImage && image && (
-        <div className="relative isolate w-full max-w-[280px] sm:max-w-[360px] lg:w-[447px] lg:max-w-none lg:shrink-0">
+        <div
+          data-service-image
+          className="relative isolate w-full max-w-[280px] sm:max-w-[360px] lg:w-[447px] lg:max-w-none lg:shrink-0"
+        >
           <div
             aria-hidden="true"
             className={`absolute inset-0 -z-10 rounded-2xl bg-primary-light transition-transform ${

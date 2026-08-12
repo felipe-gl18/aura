@@ -1,12 +1,21 @@
 import { Icon } from "@iconify/react";
 import data from "./data/data.json";
 import Organization from "./Organization";
+import { useServicePath } from "@/hooks/useServicePath";
 
 export default function Organizations({
   variant = "default",
 }: {
   variant?: "default" | "organization";
 }) {
+  const { containerRef, path, size } = useServicePath<HTMLDivElement>(
+    "[data-service-image]",
+  );
+
+  // the curve only makes sense for the zigzag layout — grid cards
+  // (variant === "organization") aren't a connected sequence visually
+  const isZigzag = variant === "default";
+
   return (
     <section className="p-6 sm:p-12 lg:p-[96px]">
       {variant === "organization" && (
@@ -32,13 +41,32 @@ export default function Organizations({
           </a>
         </div>
       )}
+
       <div
+        ref={isZigzag ? containerRef : undefined}
         className={
           variant !== "default"
             ? "grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"
-            : "flex flex-col items-center gap-8"
+            : "relative isolate flex flex-col items-center gap-8"
         }
       >
+        {isZigzag && path && (
+          <svg
+            className="pointer-events-none absolute inset-0 -z-10 hidden lg:block"
+            width={size.width}
+            height={size.height}
+          >
+            <path
+              d={path}
+              fill="none"
+              stroke="var(--color-primary-light)"
+              strokeWidth={3}
+              strokeLinecap="round"
+              strokeDasharray="10 10"
+            />
+          </svg>
+        )}
+
         {data.map((item, index) => (
           <Organization
             key={item.id}
