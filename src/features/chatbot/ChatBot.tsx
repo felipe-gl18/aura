@@ -153,8 +153,6 @@ export default function ChatBot() {
       return;
     }
 
-    console.log(value, chatState);
-
     if (chatState === "ask_email") {
       const updatedUser = {
         ...user,
@@ -257,6 +255,8 @@ export default function ChatBot() {
       email: updatedUser.email,
       phone: updatedUser.whatsapp,
       subject: "Contato via ChatBot",
+      organization: organization as "creas" | "ddm",
+      preferredChannel: updatedUser.preferredChannel as "email" | "whatsapp",
       message: `
         Novo contato realizado através do AURA.
 
@@ -273,8 +273,8 @@ export default function ChatBot() {
   const currentNode = currentNodeKey ? flowData[currentNodeKey] : null;
 
   return (
-    <div className="flex w-full max-w-sm flex-col gap-4 py-12">
-      <div className="flex flex-col gap-4">
+    <div className="flex h-full w-full flex-col gap-4">
+      <div className="flex flex-1 flex-col gap-3 sm:gap-4">
         {messages.map((message) => (
           <ChatMessageItem key={message.id} message={message} />
         ))}
@@ -288,14 +288,7 @@ export default function ChatBot() {
 
       {chatState === "ask_channel" && !isTyping && (
         <ChatOptions
-          options={[
-            {
-              label: "Email",
-            },
-            {
-              label: "WhatsApp",
-            },
-          ]}
+          options={[{ label: "Email" }, { label: "WhatsApp" }]}
           onSelect={(option) =>
             handleChannelSelect(
               option.label.toLowerCase() as "email" | "whatsapp",
