@@ -76,7 +76,8 @@ export default function Map() {
 
   return (
     <div className="flex min-w-0 flex-col gap-6 sm:gap-8">
-      <div className="relative isolate h-[75vh] w-full overflow-visible rounded-xl sm:h-[500px] lg:h-[640px]">
+      <div className="relative isolate h-[55vh] w-full overflow-visible rounded-xl sm:h-[500px] lg:h-[640px]">
+        {" "}
         <MapContainer
           center={[-3.6894, -40.3497]}
           zoom={14}
