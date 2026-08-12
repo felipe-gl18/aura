@@ -6,6 +6,8 @@ type EmailData = {
   phone: string;
   subject: string;
   message: string;
+  organization: "creas" | "ddm";
+  preferredChannel: "email" | "whatsapp";
 };
 
 export async function sendEmail(data: EmailData) {
