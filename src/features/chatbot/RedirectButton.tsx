@@ -7,9 +7,9 @@ export default function RedirectButton({ href }: { href: string }) {
       variant="outline"
       size="lg"
       onClick={() => window.open(href, "_blank")}
-      className="py-6 text-primary-main border-primary-main"
+      className="w-full whitespace-normal py-4 text-center text-primary-main border-primary-main sm:w-auto sm:py-6"
     >
-      <MessageCircle />
+      <MessageCircle className="shrink-0" />
       Entrar em contato pelo WhatsApp
     </Button>
   );
