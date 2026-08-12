@@ -1,0 +1,83 @@
+[
+  {
+    "id": "grupo-autonomia",
+    "title": "Grupo Temático: Autonomia – Fazer por Mim Mesmo!",
+    "slug": "grupo-autonomia",
+    "description": "Encontro realizado no Centro Dia do Idoso com atividades voltadas ao fortalecimento da autonomia, da independência e da qualidade de vida das pessoas idosas, incentivando o protagonismo e a convivência em grupo.",
+    "image": "grupo_autonomia",
+    "date": "2026-07-15",
+    "location": "Centro Dia do Idoso",
+    "buttonText": "Saiba mais",
+    "highlights": [
+      {
+        "icon": "solar:calendar-bold",
+        "title": "Data",
+        "description": "15 de julho de 2026"
+      },
+      {
+        "icon": "solar:map-point-bold",
+        "title": "Local",
+        "description": "Centro Dia do Idoso"
+      },
+      {
+        "icon": "solar:users-group-rounded-bold",
+        "title": "Público",
+        "description": "Pessoas idosas"
+      }
+    ]
+  },
+  {
+    "id": "novas-trilhas",
+    "title": "Reunião de Alinhamento das Medidas Socioeducativas",
+    "slug": "novas-trilhas",
+    "description": "Reunião entre as equipes para fortalecer o acompanhamento educacional de adolescentes em cumprimento de medidas socioeducativas, promovendo o alinhamento de estratégias e o aprimoramento das ações do Projeto Novas Trilhas.",
+    "image": "novas_trilhas",
+    "date": "2026-07-15",
+    "location": "CREAS",
+    "buttonText": "Saiba mais",
+    "highlights": [
+      {
+        "icon": "solar:calendar-bold",
+        "title": "Data",
+        "description": "15 de julho de 2026"
+      },
+      {
+        "icon": "solar:map-point-bold",
+        "title": "Local",
+        "description": "CREAS"
+      },
+      {
+        "icon": "solar:document-text-bold",
+        "title": "Tema",
+        "description": "Medidas socioeducativas"
+      }
+    ]
+  },
+  {
+    "id": "aepeti-feira-aprazivel",
+    "title": "Ação de Conscientização sobre o Trabalho Infantil",
+    "slug": "aepeti-feira-aprazivel",
+    "description": "Ação realizada na Feira do Aprazível para conscientizar a população sobre a erradicação do trabalho infantil, divulgar os direitos de crianças e adolescentes e fortalecer as iniciativas do AEPETI.",
+    "image": "aepeti",
+    "date": "2026-07-15",
+    "location": "Feira do Aprazível",
+    "buttonText": "Saiba mais",
+    "highlights": [
+      {
+        "icon": "solar:calendar-bold",
+        "title": "Data",
+        "description": "15 de julho de 2026"
+      },
+      {
+        "icon": "solar:map-point-bold",
+        "title": "Local",
+        "description": "Feira do Aprazível"
+      },
+      {
+        "icon": "solar:shield-warning-bold",
+        "title": "Objetivo",
+        "description": "Combate ao trabalho infantil"
+      }
+    ]
+  }
+]
