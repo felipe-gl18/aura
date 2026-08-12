@@ -76,7 +76,7 @@ export default function Map() {
 
   return (
     <div className="flex min-w-0 flex-col gap-6 sm:gap-8">
-      <div className="relative isolate h-[420px] w-full overflow-visible rounded-xl sm:h-[500px] lg:h-[640px]">
+      <div className="relative isolate h-[75vh] w-full overflow-visible rounded-xl sm:h-[500px] lg:h-[640px]">
         <MapContainer
           center={[-3.6894, -40.3497]}
           zoom={14}
@@ -99,16 +99,14 @@ export default function Map() {
             />
           ))}
         </MapContainer>
-
         <div className="pointer-events-auto absolute left-14 right-3 top-3 z-[1000] sm:inset-x-4 sm:top-4 md:inset-x-14 lg:inset-x-16 lg:top-4">
           <CategoryFilter
             value={categoryFilter}
             onChange={handleCategoryChange}
           />
         </div>
-
         {selected && (
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1000] sm:inset-x-auto sm:bottom-auto sm:right-4 sm:top-20">
+          <div className="pointer-events-none absolute inset-x-0 bottom-20 z-[1000] sm:inset-x-auto sm:bottom-auto sm:right-4 sm:top-20">
             <LocationDetailCard
               location={selected}
               onClose={() => setSelected(null)}
