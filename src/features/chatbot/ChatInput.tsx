@@ -23,19 +23,19 @@ export default function ChatInput({
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex w-full gap-2">
+    <form onSubmit={handleSubmit} className="flex w-full gap-2 py-2">
       <input
         type="text"
         value={value}
         onChange={(event) => setValue(event.target.value)}
         placeholder={placeholder}
-        className="flex-1 rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-purple-500 focus:ring-2 focus:ring-purple-100"
+        className="min-w-0 flex-1 rounded-xl border border-gray-200 bg-white px-3 py-2.5 text-sm outline-none transition focus:border-purple-500 focus:ring-2 focus:ring-purple-100 sm:px-4 sm:py-3"
       />
 
       <button
         type="submit"
         disabled={!value.trim()}
-        className="rounded-xl bg-purple-600 px-4 py-3 text-sm font-medium text-white transition hover:bg-purple-700 disabled:cursor-not-allowed disabled:opacity-50"
+        className="shrink-0 rounded-xl bg-purple-600 px-3 py-2.5 text-sm font-medium text-white transition hover:bg-purple-700 disabled:cursor-not-allowed disabled:opacity-50 sm:px-4 sm:py-3"
       >
         Enviar
       </button>
