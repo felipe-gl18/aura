@@ -162,6 +162,23 @@ export default function Navbar() {
               Sobre nós
             </NavigationMenuLink>
           </NavigationMenuItem>
+          <NavigationMenuItem onClick={() => handleRedirect("map")}>
+            <NavigationMenuLink
+              className="
+        cursor-pointer
+        rounded-md
+        px-3
+        py-2
+        text-white
+        transition-all
+        duration-200
+        hover:bg-primary-dark
+        hover:scale-105
+    "
+            >
+              Mapa
+            </NavigationMenuLink>
+          </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
 
