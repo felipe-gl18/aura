@@ -314,5 +314,125 @@
     ],
     "lat": -3.6833574294926814,
     "lng": -40.34657104596707
+  },
+  {
+    "id": "creas-01",
+    "name": "CREAS Manoel Vieira Linhares",
+    "subtitle": "Centro de Referência Especializado de Assistência Social",
+    "category": "creas",
+    "icon": "healthicons:community-health-worker",
+    "address": "Sobral - CE",
+    "phone": "",
+    "hours": "",
+    "distanceKm": 7654,
+    "isOpen": true,
+    "services": [
+      "Atendimento especializado",
+      "Proteção social especial",
+      "Acompanhamento familiar",
+      "Orientação e apoio social"
+    ],
+    "lat": -3.68178992386395,
+    "lng": -40.34075100127419
+  },
+  {
+    "id": "cras-irma-oswalda",
+    "name": "CRAS Irmã Oswalda",
+    "subtitle": "Centro de Referência de Assistência Social",
+    "category": "cras",
+    "icon": "healthicons:community-health-worker",
+    "address": "Sobral - CE",
+    "phone": "",
+    "hours": "",
+    "distanceKm": 7654,
+    "isOpen": true,
+    "services": [
+      "Atendimento e acompanhamento familiar",
+      "Serviço de convivência e fortalecimento de vínculos",
+      "Orientação e apoio social",
+      "Cadastro e acesso a benefícios sociais"
+    ],
+    "lat": -3.6731336873586637,
+    "lng": -40.341082401489786
+  },
+  {
+    "id": "cras-centro",
+    "name": "CRAS Centro",
+    "subtitle": "Centro de Referência de Assistência Social",
+    "category": "cras",
+    "icon": "healthicons:community-health-worker",
+    "address": "Sobral - CE",
+    "phone": "",
+    "hours": "",
+    "distanceKm": 7654,
+    "isOpen": true,
+    "services": [
+      "Atendimento e acompanhamento familiar",
+      "Serviço de convivência e fortalecimento de vínculos",
+      "Orientação e apoio social",
+      "Cadastro e acesso a benefícios sociais"
+    ],
+    "lat": -3.6768168176955385,
+    "lng": -40.35121042274074
+  },
+  {
+    "id": "cras-mimi-marinho",
+    "name": "CRAS Mimi Marinho",
+    "subtitle": "Centro de Referência de Assistência Social",
+    "category": "cras",
+    "icon": "healthicons:community-health-worker",
+    "address": "Sobral - CE",
+    "phone": "",
+    "hours": "",
+    "distanceKm": 7654,
+    "isOpen": true,
+    "services": [
+      "Atendimento e acompanhamento familiar",
+      "Serviço de convivência e fortalecimento de vínculos",
+      "Orientação e apoio social",
+      "Cadastro e acesso a benefícios sociais"
+    ],
+    "lat": -3.6942044133428964,
+    "lng": -40.34700471900094
+  },
+  {
+    "id": "ddm-sobral",
+    "name": "Delegacia de Defesa da Mulher",
+    "subtitle": "Delegacia de Defesa da Mulher",
+    "category": "ddm",
+    "icon": "mdi:police-badge",
+    "address": "Sobral - CE",
+    "phone": "",
+    "hours": "",
+    "distanceKm": 7654,
+    "isOpen": true,
+    "services": [
+      "Registro de ocorrência",
+      "Atendimento especializado à mulher",
+      "Orientação e encaminhamento",
+      "Medidas protetivas"
+    ],
+    "lat": -3.704837585431943,
+    "lng": -40.3434715919958
+  },
+  {
+    "id": "juizado-sobral",
+    "name": "Juizado da Violência Doméstica e Familiar contra a Mulher",
+    "subtitle": "Juizado de Violência Doméstica e Familiar",
+    "category": "justica",
+    "icon": "mdi:gavel",
+    "address": "Av. Monsenhor Aloísio Pinto, s/n - Cidade Gerardo Cristino de Meneses, Sobral - CE",
+    "phone": "(85) 3108-1689",
+    "hours": "Segunda a sexta-feira",
+    "distanceKm": 7654,
+    "isOpen": true,
+    "services": [
+      "Processos de violência doméstica e familiar",
+      "Medidas protetivas de urgência",
+      "Atendimento judicial especializado",
+      "Proteção dos direitos das mulheres"
+    ],
+    "lat": -3.704480328417108,
+    "lng": -40.34329234498227
   }
 ]
