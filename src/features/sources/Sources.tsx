@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react";
+import cemarisReport from "@/assets/panorama_dados.pdf";
 
 const sources = [
   {
@@ -9,18 +10,21 @@ const sources = [
         description:
           "Informações, políticas públicas e materiais relacionados ao enfrentamento da violência contra as mulheres.",
         icon: "solar:buildings-2-bold",
+        url: "https://www.gov.br/mulheres/pt-br",
       },
       {
         name: "Ministério do Desenvolvimento e Assistência Social",
         description:
           "Informações relacionadas à assistência social e à rede de proteção e atendimento.",
         icon: "solar:home-2-bold",
+        url: "https://www.gov.br/mds/pt-br",
       },
       {
         name: "Conselho Nacional de Justiça",
         description:
           "Dados, pesquisas e informações sobre a atuação do Judiciário no enfrentamento à violência contra a mulher.",
         icon: "solar:scale-bold",
+        url: "https://www.cnj.jus.br/",
       },
     ],
   },
@@ -28,16 +32,26 @@ const sources = [
     category: "Dados e pesquisas",
     items: [
       {
+        name: "CEMARIS",
+        description:
+          "Painel de dados oficiais sobre violência contra a mulher em Sobral, utilizado como base para o Panorama apresentado no AURA.",
+        icon: "solar:chart-square-bold",
+        url: cemarisReport,
+        download: "painel-cemaris-2026.pdf",
+      },
+      {
         name: "Fórum Brasileiro de Segurança Pública",
         description:
           "Pesquisas e dados sobre segurança pública e violência contra mulheres no Brasil.",
         icon: "solar:chart-2-bold",
+        url: "https://forumseguranca.org.br/",
       },
       {
         name: "Instituto Brasileiro de Geografia e Estatística",
         description:
           "Dados estatísticos e informações sociodemográficas utilizadas como referência.",
         icon: "solar:graph-up-bold",
+        url: "https://www.ibge.gov.br/",
       },
     ],
   },
@@ -49,12 +63,14 @@ const sources = [
         description:
           "Canal oficial de atendimento e orientação para mulheres em situação de violência.",
         icon: "solar:phone-calling-bold",
+        url: "https://www.gov.br/mulheres/pt-br/ligue180",
       },
       {
         name: "Polícia Militar — 190",
         description:
           "Canal de emergência para situações que necessitam de atendimento policial imediato.",
         icon: "solar:phone-bold",
+        url: "https://www.pm.ce.gov.br/",
       },
     ],
   },
@@ -144,23 +160,32 @@ export default function Sources() {
                     <h3 className="mt-5 text-lg font-bold text-[#2D2D2D]">
                       {source.name}
                     </h3>
-
                     <p className="mt-2 text-sm leading-6 text-gray-500">
                       {source.description}
                     </p>
-
-                    <button
-                      aria-label="Acessar fonte"
-                      type="button"
+                    <a
+                      href={source.url}
+                      {...(source.download
+                        ? { download: source.download }
+                        : { target: "_blank", rel: "noopener noreferrer" })}
+                      aria-label={
+                        source.download
+                          ? `Baixar PDF: ${source.name}`
+                          : `Acessar fonte: ${source.name}`
+                      }
                       className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#6C3EB8] transition group-hover:gap-3"
                     >
-                      Acessar fonte
+                      {source.download ? "Baixar PDF" : "Acessar fonte"}
                       <Icon
-                        icon="solar:arrow-right-linear"
+                        icon={
+                          source.download
+                            ? "solar:file-download-linear"
+                            : "solar:arrow-right-linear"
+                        }
                         width={18}
                         height={18}
                       />
-                    </button>
+                    </a>
                   </article>
                 ))}
               </div>
