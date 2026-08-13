@@ -48,9 +48,7 @@ const handleDirections = (location: ServiceLocation) => {
 };
 
 export default function Map() {
-  const [selected, setSelected] = useState<ServiceLocation | null>(
-    locations[0] ?? null,
-  );
+  const [selected, setSelected] = useState<ServiceLocation | null>(null);
   const [categoryFilter, setCategoryFilter] =
     useState<CategoryFilterValue>("all");
 
