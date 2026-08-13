@@ -2,6 +2,7 @@ import { Icon } from "@iconify/react";
 import data from "./data/data.json";
 import Organization from "./Organization";
 import { useServicePath } from "@/hooks/useServicePath";
+import organizationsBackground from "@/assets/background.svg";
 
 export default function Organizations({
   variant = "default",
@@ -17,7 +18,18 @@ export default function Organizations({
   const isZigzag = variant === "default";
 
   return (
-    <section className="p-6 sm:p-12 lg:p-[96px]">
+    <section
+      className="relative overflow-hidden p-6 sm:p-12 lg:p-[96px]"
+      style={
+        isZigzag
+          ? {
+              backgroundImage: `url("${organizationsBackground}")`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }
+          : undefined
+      }
+    >
       {variant === "organization" && (
         <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
