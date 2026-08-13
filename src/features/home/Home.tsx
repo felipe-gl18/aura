@@ -5,16 +5,25 @@ import Events from "../events/Events";
 import Organizations from "../organizations/Organizations";
 import Panorama from "../panorama/Panorama";
 import Services from "../services/Services";
+import background from "@/assets/background.svg";
 
 export default function Home() {
   return (
-    <div className="space-y-8">
+    <div className="">
       <OrganizationsCarousel />
       <Organizations variant="organization" />
       <ViolenceTypes />
       <Panorama variant="basic" />
-      <Services variant="basic" />
-      <Events variant="basic" />
+      <div
+        style={{
+          backgroundImage: `url("${background}")`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <Services variant="basic" />
+        <Events variant="basic" />
+      </div>
       <Separator />
     </div>
   );
