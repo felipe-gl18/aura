@@ -234,6 +234,15 @@ export default function ChatBot() {
       return;
     }
 
+    setMessages((prev) => [
+      ...prev,
+      {
+        id: crypto.randomUUID(),
+        sender: "bot",
+        type: "question",
+        text: "A equipe do serviço entrará em contato pelo canal selecionado. Obrigado por confiar em nós!",
+      },
+    ]);
     setChatState("finished");
   };
 
