@@ -32,6 +32,6 @@ export const categoryLabels: Record<ServiceCategory, string> = {
   ddm: "DDM",
   creas: "CREAS",
   cras: "CRAS",
-  saude: "Saúde (SUS)",
+  saude: "Saúde",
   justica: "Justiça",
 };
