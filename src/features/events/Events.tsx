@@ -7,11 +7,10 @@ export default function Events({ variant }: { variant: "default" | "basic" }) {
   const { containerRef, path, size } = useServicePath<HTMLDivElement>(
     "[data-service-image]",
   );
-
   return (
-    <section className="p-6 sm:p-12 lg:p-[96px]">
+    <section className="relative overflow-hidden p-6 sm:p-12 lg:p-[96px]">
       {variant === "basic" && (
-        <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <div className="relative mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <h2 className="text-2xl font-black text-text sm:text-3xl">
               Eventos

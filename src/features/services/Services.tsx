@@ -13,7 +13,7 @@ export default function Services({
   );
 
   return (
-    <section className="p-6 sm:p-12 lg:p-[96px]">
+    <section className="relative overflow-hidden p-6 sm:p-12 lg:p-[96px]">
       {variant === "basic" && (
         <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div>

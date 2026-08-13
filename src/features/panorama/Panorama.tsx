@@ -1,4 +1,3 @@
-// Panorama.tsx
 import { Icon } from "@iconify/react";
 import PanoramaAction from "./PanoramaAction";
 import PanoramaNumbers from "./PanoramaNumbers";
@@ -6,6 +5,7 @@ import PanoramaViolenceTypes from "./PanoramaViolenceTypes";
 import PanoramaWhen from "./PanoramaWhen";
 import PanoramaWhere from "./PanoramaWhere";
 import PanoramaWho from "./PanoramaWho";
+import cemarisReport from "@/assets/panorama_dados.pdf";
 
 export default function Panorama({
   variant,
@@ -30,14 +30,15 @@ export default function Panorama({
             2026
           </p>
           <a
-            href="/services"
+            href={cemarisReport}
+            download="painel-cemaris-2026.pdf"
             className="group flex items-center gap-2 text-sm font-semibold text-primary-main transition-all hover:gap-3"
           >
-            Fonte: Painel CEMARIS
+            Baixar painel CEMARIS (PDF)
             <Icon
-              icon="solar:arrow-right-linear"
+              icon="solar:file-download-linear"
               width={18}
-              className="transition-transform group-hover:translate-x-1"
+              className="transition-transform group-hover:translate-y-0.5"
             />
           </a>
         </div>
