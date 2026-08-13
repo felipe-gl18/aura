@@ -106,7 +106,7 @@ export default function Map() {
           />
         </div>
         {selected && (
-          <div className="pointer-events-none absolute inset-x-0 bottom-20 z-[1000] sm:inset-x-auto sm:bottom-auto sm:right-4 sm:top-20">
+          <div className="pointer-events-none absolute inset-x-0 top-4 z-[1000] sm:inset-x-auto sm:bottom-auto sm:right-4 sm:top-20">
             <LocationDetailCard
               location={selected}
               onClose={() => setSelected(null)}
