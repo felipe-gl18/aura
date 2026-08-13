@@ -1,8 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import main from "@/assets/illustrations/violence.svg";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone } from "lucide-react";
 
 export default function PanoramaAction() {
+  const navigate = useNavigate();
+
   return (
     <section className="overflow-hidden rounded-3xl bg-primary-dark">
       <div className="grid items-center gap-10 px-10 py-14 lg:grid-cols-2 lg:px-16">
@@ -24,19 +27,22 @@ export default function PanoramaAction() {
 
           <div className="flex flex-wrap gap-4">
             <Button
-              aria-label="Ligar 180"
+              aria-label="Ligar para o 180"
               size="lg"
-              className="bg-white text-primary hover:bg-primary-light"
+              className="flex bg-white text-primary hover:bg-primary-light"
             >
-              <Phone className="mr-2 h-5 w-5" />
-              Ligue 180
+              <a href="tel:180" className="flex items-center justify-center">
+                <Phone className="mr-2 h-5 w-5" />
+                Ligue 180
+              </a>
             </Button>
 
             <Button
-              aria-label="Rede de apoio"
+              aria-label="Ver rede de apoio no mapa"
               size="lg"
               variant="outline"
               className="border-white bg-transparent text-white hover:bg-white hover:text-primary"
+              onClick={() => navigate("/map")}
             >
               Conheça a rede de apoio
               <ArrowRight className="ml-2 h-5 w-5" />
