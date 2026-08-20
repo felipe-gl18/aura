@@ -11,6 +11,7 @@ import Organizations from "./features/organizations/Organizations";
 import About from "./features/about/About";
 import Sources from "./features/sources/Sources";
 import Map from "./features/map/Map";
+import Cases from "./features/cases/Cases";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           ></Route>
           <Route path="/services/:service" element={<ServiceDetail />}></Route>
           <Route path="/events" element={<Events variant="default" />}></Route>
+          <Route path="/cases" element={<Cases />}></Route>
           <Route
             path="/panorama"
             element={<Panorama variant="default" />}

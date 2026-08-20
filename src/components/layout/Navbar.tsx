@@ -132,6 +132,23 @@ export default function Navbar() {
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
+          <NavigationMenuItem onClick={() => handleRedirect("cases")}>
+            <NavigationMenuLink
+              className="
+        cursor-pointer
+        rounded-md
+        px-3
+        py-2
+        text-white
+        transition-all
+        duration-200
+        hover:bg-primary-dark
+        hover:scale-105
+    "
+            >
+              Recomeços
+            </NavigationMenuLink>
+          </NavigationMenuItem>
           <NavigationMenuItem onClick={() => handleRedirect("panorama")}>
             <NavigationMenuLink
               className="
@@ -264,6 +281,14 @@ export default function Navbar() {
             }))}
             onNavigate={handleRedirect}
           />
+
+          <button
+            aria-label="Recomeços"
+            onClick={() => handleRedirect("cases")}
+            className="px-2 py-3 text-left text-sm font-medium"
+          >
+            Recomeços
+          </button>
 
           <button
             aria-label="Panorama"
