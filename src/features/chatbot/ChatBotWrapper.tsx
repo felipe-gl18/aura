@@ -8,29 +8,31 @@ export default function ChatBotWrapper() {
     <Sheet>
       <SheetTrigger
         className="
-          fixed
-          bottom-4
-          right-4
-          z-50
-          flex
-          items-center
-          gap-2
-          rounded-full
-          bg-primary
-          p-4
-          text-sm
-          font-semibold
-          text-primary-foreground
-          shadow-xl
-          transition-all
-          hover:scale-105
-          hover:shadow-2xl
-          active:scale-95
-          sm:bottom-6
-          sm:right-6
-          sm:gap-3
-          sm:px-5
-        "
+    fixed
+    bottom-4
+    right-4
+    z-50
+    flex
+    items-center
+    gap-2
+    rounded-full
+    bg-primary
+    p-4
+    text-sm
+    font-semibold
+    text-primary-foreground
+    shadow-xl
+    transition-all
+    animate-bounce
+    hover:scale-105
+    hover:shadow-2xl
+    hover:[animation-play-state:paused]
+    active:scale-95
+    sm:bottom-6
+    sm:right-6
+    sm:gap-3
+    sm:px-5
+  "
       >
         <MessageCircleHeart className="h-7 w-7 shrink-0" />
         <span className="hidden sm:inline">Precisa de ajuda?</span>
