@@ -1,5 +1,23 @@
 import { Link } from "react-router-dom";
 import { PhoneCall, ExternalLink } from "lucide-react";
+import { Icon } from "@iconify/react";
+
+const organizacoes = [
+  {
+    nome: "CREAS",
+    instagram: "https://www.instagram.com/creassobral/",
+    whatsapp: "https://wa.me/558881132679",
+  },
+  {
+    nome: "CRAS",
+    instagram: "https://www.instagram.com/crasirmaoswaldasobral/",
+    whatsapp: "https://wa.me/5585989597453",
+  },
+  {
+    nome: "Juizado",
+    whatsapp: "https://wa.me/558582344888",
+  },
+];
 
 export default function Footer() {
   return (
@@ -26,20 +44,47 @@ export default function Footer() {
           </nav>
         </div>
 
-        {/* Organizations */}
         <div>
           <h3 className="py-4 font-semibold text-white">Organizações</h3>
 
-          <nav className="flex flex-col gap-3 text-sm">
-            <a
-              href="https://www.instagram.com/creassobral/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#EDE5FA] transition-colors hover:text-white"
-            >
-              CREAS
-            </a>
-          </nav>
+          <div className="flex flex-col gap-6">
+            {organizacoes.map((org) => (
+              <div key={org.nome} className="flex flex-col gap-2 text-sm">
+                <a
+                  href={org.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#EDE5FA] transition-colors hover:text-white"
+                >
+                  {org.nome}
+                </a>
+
+                <nav className="flex items-center gap-3">
+                  <a
+                    href={org.whatsapp}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`WhatsApp do ${org.nome}`}
+                    className="text-[#EDE5FA] transition-colors hover:text-white"
+                  >
+                    <Icon icon="mdi:whatsapp" width={20} height={20} />
+                  </a>
+
+                  {org.instagram && (
+                    <a
+                      href={org.instagram}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Instagram do ${org.nome}`}
+                      className="text-[#EDE5FA] transition-colors hover:text-white"
+                    >
+                      <Icon icon="mdi:instagram" width={20} height={20} />
+                    </a>
+                  )}
+                </nav>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Emergency */}
