@@ -6,6 +6,7 @@ import Organizations from "../organizations/Organizations";
 import Panorama from "../panorama/Panorama";
 import Services from "../services/Services";
 import background from "@/assets/background.svg";
+import Cases from "../cases/Cases";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       >
         <Services variant="basic" />
         <Events variant="basic" />
+        <Cases />
       </div>
       <Separator />
     </div>

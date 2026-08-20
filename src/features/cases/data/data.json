@@ -1,0 +1,80 @@
+[
+  {
+    "id": "maria-da-penha",
+    "title": "Uma história que mudou o Brasil",
+    "person": "Maria da Penha",
+    "category": "Histórias de Recomeço",
+    "summary": "Maria da Penha transformou sua luta por justiça em uma mobilização que ajudou a mudar a forma como o Brasil enfrenta a violência doméstica.",
+    "story": "Depois de sofrer violência doméstica e enfrentar anos de dificuldades para obter justiça, Maria da Penha decidiu transformar sua experiência em uma luta por mudanças. Sua trajetória contribuiu para a criação da Lei nº 11.340/2006, conhecida como Lei Maria da Penha, que se tornou um dos principais instrumentos brasileiros de proteção às mulheres contra a violência doméstica e familiar.",
+    "message": "Uma experiência dolorosa pode se transformar em uma força capaz de proteger milhões de pessoas.",
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/MariaDaPenha.jpg",
+      "alt": "Maria da Penha",
+      "credit": "Antonio Cruz / Agência Brasil",
+      "license": "CC BY 3.0 BR",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MariaDaPenha.jpg"
+    },
+    "references": [
+      {
+        "title": "20 anos da Lei Maria da Penha",
+        "organization": "Ministério das Mulheres",
+        "url": "https://www.gov.br/mulheres/pt-br/central-de-conteudos/noticias/2026/agosto-defeso-eleitoral/20-anos-da-lei-maria-da-penha-conheca-os-principais-avancos-na-protecao-as-mulheres-e-no-acesso-a-justica"
+      }
+    ]
+  },
+  {
+    "id": "tina-turner",
+    "title": "Ela escolheu recomeçar",
+    "person": "Tina Turner",
+    "category": "Histórias de Recomeço",
+    "summary": "Depois de anos vivendo um relacionamento abusivo, Tina Turner conseguiu reconstruir sua vida e sua carreira, tornando-se uma das maiores artistas da história da música.",
+    "story": "Tina Turner viveu durante anos um relacionamento marcado pela violência. Em 1976, decidiu deixar o relacionamento e recomeçar sua vida. Após o divórcio, enfrentou um período de grandes dificuldades, mas continuou sua trajetória profissional. Nos anos seguintes, reconstruiu sua carreira solo e alcançou enorme sucesso internacional.",
+    "message": "Recomeçar pode parecer impossível, mas uma nova vida pode ser construída passo a passo.",
+    "image": {
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tina_Turner_1977.jpg",
+      "alt": "Tina Turner em 1977",
+      "credit": "Harry Langdon",
+      "license": "CC0",
+      "source": "Wikimedia Commons",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tina_Turner_1977.jpg"
+    },
+    "references": [
+      {
+        "title": "Tina Turner: domestic abuse survivors praise her bravery",
+        "organization": "The Guardian",
+        "url": "https://www.theguardian.com/society/2023/may/25/she-gave-me-hope-domestic-abuse-survivors-praise-tina-turner-gravery-melanie-brown-mel-b"
+      },
+      {
+        "title": "Tina Turner: the extraordinary life and career",
+        "organization": "ABC News",
+        "url": "https://www.abc.net.au/news/2023-05-26/tina-turner-last-interview-vogue-the-guardian-domestic-abuse/102390378"
+      }
+    ]
+  },
+  {
+    "id": "leide-damaceno",
+    "title": "De sobrevivente a agente de transformação",
+    "person": "Leide Damaceno",
+    "category": "Histórias de Recomeço",
+    "summary": "Depois de romper um longo ciclo de violência e receber proteção da Justiça, Leide Damaceno reconstruiu sua vida e passou a ajudar outras pessoas que enfrentam situações semelhantes.",
+    "story": "Leide Damaceno viveu um longo período de violência doméstica. Ao decidir romper o ciclo, procurou ajuda e recebeu medidas protetivas da Justiça. A partir desse momento, começou a reconstruir sua vida. Formou-se em Serviço Social e passou a trabalhar na área, chegando a coordenar um CREAS e a ajudar outras pessoas que enfrentam situações de violência.",
+    "message": "A ajuda recebida em um momento difícil pode se transformar em força para ajudar outras pessoas.",
+    "image": {
+      "url": null,
+      "alt": "Leide Damaceno",
+      "credit": null,
+      "license": null,
+      "source": "Tribunal de Justiça de Rondônia",
+      "sourceUrl": "https://www.tjro.jus.br/noticias/mais-noticias/vidas-que-transformam-vidas-a-superacao-de-uma-vitima-de-violencia-domestica-a-partir-de-uma-decisao-do-judiciario-de-rondonia",
+      "usageNote": "A fotografia publicada pelo TJRO não possui licença aberta claramente identificada. Solicitar autorização ao TJRO antes de utilizá-la no projeto."
+    },
+    "references": [
+      {
+        "title": "Vidas que transformam vidas: a superação de uma vítima de violência doméstica",
+        "organization": "Tribunal de Justiça de Rondônia",
+        "url": "https://www.tjro.jus.br/noticias/mais-noticias/vidas-que-transformam-vidas-a-superacao-de-uma-vitima-de-violencia-domestica-a-partir-de-uma-decisao-do-judiciario-de-rondonia"
+      }
+    ]
+  }
+]
