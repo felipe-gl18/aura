@@ -32,7 +32,7 @@ export default function ChatBotWrapper() {
           sm:px-5
         "
       >
-        <MessageCircleHeart className="h-5 w-5 shrink-0" />
+        <MessageCircleHeart className="h-7 w-7 shrink-0" />
         <span className="hidden sm:inline">Precisa de ajuda?</span>
       </SheetTrigger>
 
