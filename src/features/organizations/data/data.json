@@ -74,8 +74,8 @@
     "color": "#2563EB",
     "buttonText": "Conheça o Juizado",
     "action": {
-      "type": "external",
-      "value": "https://www.tjce.jus.br/"
+      "type": "whatsapp",
+      "value": "558582344888"
     },
     "highlights": [
       {
