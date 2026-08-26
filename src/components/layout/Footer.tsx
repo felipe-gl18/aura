@@ -9,9 +9,14 @@ const organizacoes = [
     whatsapp: "https://wa.me/558881132679",
   },
   {
-    nome: "CRAS",
-    instagram: "https://www.instagram.com/crasirmaoswaldasobral/",
-    whatsapp: "https://wa.me/5585989597453",
+    nome: "SEDHAS",
+    instagram: "https://www.instagram.com/sedhassobral/",
+    whatsapp: "https://wa.me/558836954128",
+  },
+  {
+    nome: "Prefeitura de Sobral",
+    instagram: "https://www.instagram.com/prefeitura_sobral/",
+    whatsapp: "https://wa.me/558836771100",
   },
   {
     nome: "Juizado",
