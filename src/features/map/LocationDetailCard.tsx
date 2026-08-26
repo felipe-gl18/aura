@@ -2,6 +2,7 @@ import { Icon } from "@iconify/react";
 import type { ServiceLocation } from "@/types/service-location";
 import { categoryStyles } from "@/types/service-location";
 import { Button } from "@/components/ui/button";
+import { getOpenStatus } from "@/lib/opening-hours";
 
 export default function LocationDetailCard({
   location,
@@ -15,6 +16,7 @@ export default function LocationDetailCard({
   onDetails?: (location: ServiceLocation) => void;
 }) {
   const style = categoryStyles[location.category];
+  const status = getOpenStatus(location.schedule);
 
   return (
     <div className="pointer-events-auto mx-auto max-h-[65%] w-[80%] overflow-y-auto rounded-t-2xl bg-surface p-4 shadow-xl sm:mx-0 sm:max-h-none sm:w-[320px] sm:rounded-2xl sm:p-5">
@@ -52,18 +54,12 @@ export default function LocationDetailCard({
       <div className="mt-3 flex flex-wrap items-center gap-2">
         <span
           className={`rounded-full px-2.5 py-1 text-xs font-semibold ${
-            location.isOpen
+            status.isOpen
               ? "bg-success/10 text-success"
               : "bg-warning/10 text-warning"
           }`}
         >
-          {location.isOpen
-            ? "Aberto agora"
-            : `Fecha às ${location.closesAt ?? "—"}`}
-        </span>
-        <span className="flex items-center gap-1 text-xs text-text-secondary">
-          <Icon icon="solar:map-point-linear" width={14} height={14} />
-          {location.distanceKm.toLocaleString("pt-BR")} km
+          {status.isOpen ? "Aberto agora" : status.label}
         </span>
       </div>
       <div className="mt-4 flex flex-col gap-3 border-t border-primary-light pt-4 text-sm">

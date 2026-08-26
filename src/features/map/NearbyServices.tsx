@@ -7,6 +7,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import { getOpenStatus } from "@/lib/opening-hours";
 
 function NearbyServiceCard({
   location,
@@ -16,6 +17,7 @@ function NearbyServiceCard({
   onClick?: (location: ServiceLocation) => void;
 }) {
   const style = categoryStyles[location.category];
+  const status = getOpenStatus(location.schedule);
 
   return (
     <button
@@ -48,18 +50,12 @@ function NearbyServiceCard({
       <div className="flex flex-wrap items-center justify-between gap-1">
         <span
           className={`rounded-full px-2 py-0.5 text-[11px] font-semibold ${
-            location.isOpen
+            status.isOpen
               ? "bg-success/10 text-success"
               : "bg-warning/10 text-warning"
           }`}
         >
-          {location.isOpen
-            ? "Aberto agora"
-            : `Fecha às ${location.closesAt ?? "—"}`}
-        </span>
-        <span className="flex items-center gap-1 text-xs text-text-secondary">
-          <Icon icon="solar:map-point-linear" width={12} height={12} />
-          {location.distanceKm.toLocaleString("pt-BR")} km
+          {status.isOpen ? "Aberto agora" : status.label}
         </span>
       </div>
     </button>

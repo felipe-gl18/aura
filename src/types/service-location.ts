@@ -1,3 +1,5 @@
+import type { Schedule } from "@/lib/opening-hours";
+
 export type ServiceCategory = "ddm" | "creas" | "cras" | "saude" | "justica";
 
 export type ServiceLocation = {
@@ -8,10 +10,9 @@ export type ServiceLocation = {
   icon: string; // iconify icon name
   address: string;
   phone?: string;
-  hours?: string;
+  hours?: string; // texto legível, ex: "07h às 19h" — usado só para exibição
+  schedule?: Schedule; // dados estruturados usados para calcular se está aberto agora
   distanceKm: number;
-  isOpen: boolean;
-  closesAt?: string; // e.g. "17h" — só usado quando isOpen for false por horário
   services?: string[];
   lat: number;
   lng: number;

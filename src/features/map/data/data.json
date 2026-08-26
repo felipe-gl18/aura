@@ -8,8 +8,7 @@
     "address": "CE-440, 670 - Centro, Sobral - CE, 62011-060",
     "phone": "não informado",
     "hours": "07h às 22h",
-    "distanceKm": 7654,
-    "isOpen": true,
+    "schedule": { "openTime": "07:00", "closeTime": "22:00" },
     "services": [
       "Atenção básica",
       "Consultas",
@@ -28,8 +27,7 @@
     "address": "R. Inês de Vasconcelos, s/n - Cohab I, Sobral - CE, 62050-580",
     "phone": "(88) 3614-3364",
     "hours": "07h às 19h",
-    "distanceKm": 7654,
-    "isOpen": true,
+    "schedule": { "openTime": "07:00", "closeTime": "19:00" },
     "services": [
       "Atenção básica",
       "Consultas",
@@ -48,8 +46,7 @@
     "address": "R. Raimundo Hubner Mendes Carneiro, 66 - Cohab III, Sobral - CE, 62030-520",
     "phone": "(88) 3614-5416",
     "hours": "07h às 19h",
-    "distanceKm": 7654,
-    "isOpen": true,
+    "schedule": { "openTime": "07:00", "closeTime": "19:00" },
     "services": [
       "Atenção básica",
       "Saúde da família",
@@ -68,8 +65,7 @@
     "address": "R. Pintor Lemos, 997 - Centro, Sobral - CE, 62010-720",
     "phone": "(88) 3611-1510",
     "hours": "não informado",
-    "distanceKm": 7654,
-    "isOpen": false,
+    "schedule": { "closed": true },
     "services": ["Atenção básica", "Consultas", "Atendimento de enfermagem"],
     "lat": -3.6888276443427515,
     "lng": -40.357620759458705
@@ -83,8 +79,7 @@
     "address": "Rua Maria Monte, s/n - Alto do Cristo, Sobral - CE",
     "phone": "(88) 3614-5758",
     "hours": "07h às 19h",
-    "distanceKm": 7654,
-    "isOpen": true,
+    "schedule": { "openTime": "07:00", "closeTime": "19:00" },
     "services": [
       "Atenção básica",
       "Saúde da família",
@@ -103,8 +98,7 @@
     "address": "Rua Pedro Gomes, 500 - Alto da Brasília, Sobral - CE",
     "phone": "(88) 3695-4231",
     "hours": "07h às 19h",
-    "distanceKm": 7654,
-    "isOpen": true,
+    "schedule": { "openTime": "07:00", "closeTime": "19:00" },
     "services": [
       "Atenção básica",
       "Saúde da família",
@@ -123,8 +117,7 @@
     "address": "Av. Dr. Paulo Sanford, s/n - Expectativa, Sobral - CE",
     "phone": "(88) 3695-4198",
     "hours": "07h às 19h",
-    "distanceKm": 7654,
-    "isOpen": true,
+    "schedule": { "openTime": "07:00", "closeTime": "19:00" },
     "services": [
       "Atenção básica",
       "Saúde da família",
@@ -143,8 +136,7 @@
     "address": "Rua Jandáia, 55 - Residencial Nova Caiçara, Sobral - CE",
     "phone": "não informado",
     "hours": "07h às 19h",
-    "distanceKm": 7654,
-    "isOpen": true,
+    "schedule": { "openTime": "07:00", "closeTime": "19:00" },
     "services": [
       "Atenção básica",
       "Saúde da família",
@@ -163,8 +155,7 @@
     "address": "Rua Coronel Mont'Alverne, s/n - Campo dos Velhos, Sobral - CE",
     "phone": "não informado",
     "hours": "07h às 19h",
-    "distanceKm": 7654,
-    "isOpen": true,
+    "schedule": { "openTime": "07:00", "closeTime": "19:00" },
     "services": [
       "Atenção básica",
       "Saúde da família",
@@ -183,8 +174,7 @@
     "address": "Rua Artemísia, s/n - Cohab II, Sobral - CE",
     "phone": "(88) 3611-3199",
     "hours": "07h às 19h",
-    "distanceKm": 7654,
-    "isOpen": true,
+    "schedule": { "openTime": "07:00", "closeTime": "19:00" },
     "services": [
       "Atenção básica",
       "Saúde da família",
@@ -203,8 +193,7 @@
     "address": "Av. Moacir Lima Feijão, 1841 - Gerardo Cristino, Sobral - CE, 62040-743",
     "phone": "(88) 3611-7758",
     "hours": "24 horas, todos os dias",
-    "distanceKm": 7654,
-    "isOpen": true,
+    "schedule": { "is24h": true },
     "services": [
       "Urgência e emergência",
       "Atendimento médico",
@@ -223,8 +212,7 @@
     "address": "R. Antônio Crisóstomo de Melo, 919 - Centro, Sobral - CE, 62010-550",
     "phone": "(88) 3112-0400",
     "hours": "24 horas, todos os dias",
-    "distanceKm": 7654,
-    "isOpen": true,
+    "schedule": { "is24h": true },
     "services": [
       "Atendimento hospitalar",
       "Urgência e emergência",
@@ -243,8 +231,7 @@
     "address": "Av. John Sanford, 1505 - José Euclides, Sobral - CE, 62030-340",
     "phone": "(88) 3677-9300",
     "hours": "24 horas, todos os dias",
-    "distanceKm": 7654,
-    "isOpen": true,
+    "schedule": { "is24h": true },
     "services": [
       "Urgência e emergência",
       "Alta complexidade",
@@ -264,8 +251,7 @@
     "address": "Av. Gerardo Rangel, 715 - Jocely Dantas, Sobral - CE, 62042-240",
     "phone": "(88) 3677-8500",
     "hours": "24 horas, todos os dias",
-    "distanceKm": 7654,
-    "isOpen": true,
+    "schedule": { "is24h": true },
     "services": [
       "Atendimento cardiológico",
       "Internação",
@@ -284,8 +270,7 @@
     "address": "Av. Monsenhor José Aloísio Pinto, 481 - Dom Expedito, Sobral - CE, 62050-255",
     "phone": "(88) 3614-3156",
     "hours": "07h às 17h",
-    "distanceKm": 7654,
-    "isOpen": true,
+    "schedule": { "openTime": "07:00", "closeTime": "17:00" },
     "services": [
       "Atendimento especializado",
       "Exames",
@@ -304,8 +289,7 @@
     "address": "R. João Barbosa, 401 - Centro, Sobral - CE, 62010-220",
     "phone": "(85) 3771-1501",
     "hours": "24 horas, todos os dias",
-    "distanceKm": 7654,
-    "isOpen": true,
+    "schedule": { "is24h": true },
     "services": [
       "Atendimento hospitalar",
       "Urgência e emergência",
@@ -324,8 +308,7 @@
     "address": "Sobral - CE",
     "phone": "",
     "hours": "",
-    "distanceKm": 7654,
-    "isOpen": true,
+    "schedule": { "closed": true },
     "services": [
       "Atendimento especializado",
       "Proteção social especial",
@@ -341,39 +324,49 @@
     "subtitle": "Centro de Referência de Assistência Social",
     "category": "cras",
     "icon": "healthicons:community-health-worker",
-    "address": "Sobral - CE",
-    "phone": "",
-    "hours": "",
-    "distanceKm": 7654,
-    "isOpen": true,
+    "address": "Rua Olavo Bilac, S/N - Alto da Brasília, Sobral - CE",
+    "phone": "(88) 3695-4122",
+    "hours": "Segunda a sexta-feira, das 08h às 12h e das 13h às 17h",
+    "schedule": {
+      "days": [1, 2, 3, 4, 5],
+      "openTime": "08:00",
+      "closeTime": "17:00",
+      "breakStart": "12:00",
+      "breakEnd": "13:00"
+    },
     "services": [
       "Atendimento e acompanhamento familiar",
       "Serviço de convivência e fortalecimento de vínculos",
       "Orientação e apoio social",
       "Cadastro e acesso a benefícios sociais"
     ],
-    "lat": -3.6731336873586637,
-    "lng": -40.341082401489786
+    "lat": -3.673835313065266,
+    "lng": -40.34101874594485
   },
   {
-    "id": "cras-centro",
-    "name": "CRAS Centro",
+    "id": "cras-dom-jose",
+    "name": "CRAS Dom José",
     "subtitle": "Centro de Referência de Assistência Social",
     "category": "cras",
     "icon": "healthicons:community-health-worker",
-    "address": "Sobral - CE",
+    "address": "Rua Manoel Marinho de Andrade, 1266 - Padre Ibiapina, Sobral - CE",
     "phone": "",
-    "hours": "",
-    "distanceKm": 7654,
-    "isOpen": true,
+    "hours": "Segunda a sexta-feira, das 08h às 12h e das 13h às 17h",
+    "schedule": {
+      "days": [1, 2, 3, 4, 5],
+      "openTime": "08:00",
+      "closeTime": "17:00",
+      "breakStart": "12:00",
+      "breakEnd": "13:00"
+    },
     "services": [
       "Atendimento e acompanhamento familiar",
       "Serviço de convivência e fortalecimento de vínculos",
       "Orientação e apoio social",
       "Cadastro e acesso a benefícios sociais"
     ],
-    "lat": -3.6768168176955385,
-    "lng": -40.35121042274074
+    "lat": -3.69516529178755,
+    "lng": -40.365240074780715
   },
   {
     "id": "cras-mimi-marinho",
@@ -381,19 +374,99 @@
     "subtitle": "Centro de Referência de Assistência Social",
     "category": "cras",
     "icon": "healthicons:community-health-worker",
-    "address": "Sobral - CE",
-    "phone": "",
-    "hours": "",
-    "distanceKm": 7654,
-    "isOpen": true,
+    "address": "Rua Hélio Arruda Coelho, 120 - Dom Expedito, Sobral - CE",
+    "phone": "(88) 3695-4121",
+    "hours": "Segunda a sexta-feira, das 08h às 12h e das 13h às 17h",
+    "schedule": {
+      "days": [1, 2, 3, 4, 5],
+      "openTime": "08:00",
+      "closeTime": "17:00",
+      "breakStart": "12:00",
+      "breakEnd": "13:00"
+    },
     "services": [
       "Atendimento e acompanhamento familiar",
       "Serviço de convivência e fortalecimento de vínculos",
       "Orientação e apoio social",
       "Cadastro e acesso a benefícios sociais"
     ],
-    "lat": -3.6942044133428964,
-    "lng": -40.34700471900094
+    "lat": -3.695608652732043,
+    "lng": -40.34693794594463
+  },
+  {
+    "id": "cras-regina-justa",
+    "name": "CRAS Regina Justa",
+    "subtitle": "Centro de Referência de Assistência Social",
+    "category": "cras",
+    "icon": "healthicons:community-health-worker",
+    "address": "Rua Jerusalém, S/N - Vila União, Sobral - CE",
+    "phone": "(88) 3695-4120",
+    "hours": "Segunda a sexta-feira, das 08h às 12h e das 13h às 17h",
+    "schedule": {
+      "days": [1, 2, 3, 4, 5],
+      "openTime": "08:00",
+      "closeTime": "17:00",
+      "breakStart": "12:00",
+      "breakEnd": "13:00"
+    },
+    "services": [
+      "Atendimento e acompanhamento familiar",
+      "Serviço de convivência e fortalecimento de vínculos",
+      "Orientação e apoio social",
+      "Cadastro e acesso a benefícios sociais"
+    ],
+    "lat": -3.682487182674483,
+    "lng": -40.37023576128927
+  },
+  {
+    "id": "cras-aracatiacu",
+    "name": "CRAS Aracatiaçu",
+    "subtitle": "Centro de Referência de Assistência Social",
+    "category": "cras",
+    "icon": "healthicons:community-health-worker",
+    "address": "Rua Maria Ursula Vasconcelos, S/N - Aracatiaçu, Sobral - CE",
+    "phone": "",
+    "hours": "Segunda a sexta-feira, das 08h às 12h e das 13h às 17h",
+    "schedule": {
+      "days": [1, 2, 3, 4, 5],
+      "openTime": "08:00",
+      "closeTime": "17:00",
+      "breakStart": "12:00",
+      "breakEnd": "13:00"
+    },
+    "services": [
+      "Atendimento e acompanhamento familiar",
+      "Serviço de convivência e fortalecimento de vínculos",
+      "Orientação e apoio social",
+      "Cadastro e acesso a benefícios sociais"
+    ],
+    "lat": -3.8788976194488654,
+    "lng": -40.02179561710712
+  },
+  {
+    "id": "cras-jaibaras",
+    "name": "CRAS Jaibaras",
+    "subtitle": "Centro de Referência de Assistência Social",
+    "category": "cras",
+    "icon": "healthicons:community-health-worker",
+    "address": "Rua Bela Vista, S/N (Rua da Manga, 4) - Distrito de Jaibaras, Sobral - CE",
+    "phone": "(88) 3695-4126",
+    "hours": "Segunda a sexta-feira, das 08h às 12h e das 13h às 17h",
+    "schedule": {
+      "days": [1, 2, 3, 4, 5],
+      "openTime": "08:00",
+      "closeTime": "17:00",
+      "breakStart": "12:00",
+      "breakEnd": "13:00"
+    },
+    "services": [
+      "Atendimento e acompanhamento familiar",
+      "Serviço de convivência e fortalecimento de vínculos",
+      "Orientação e apoio social",
+      "Cadastro e acesso a benefícios sociais"
+    ],
+    "lat": -3.7766378799372493,
+    "lng": -40.49860722081354
   },
   {
     "id": "ddm-sobral",
@@ -404,8 +477,7 @@
     "address": "Sobral - CE",
     "phone": "",
     "hours": "",
-    "distanceKm": 7654,
-    "isOpen": true,
+    "schedule": { "closed": true },
     "services": [
       "Registro de ocorrência",
       "Atendimento especializado à mulher",
@@ -424,8 +496,7 @@
     "address": "Av. Monsenhor Aloísio Pinto, s/n - Cidade Gerardo Cristino de Meneses, Sobral - CE",
     "phone": "(85) 3108-1689",
     "hours": "Segunda a sexta-feira",
-    "distanceKm": 7654,
-    "isOpen": true,
+    "schedule": { "days": [1, 2, 3, 4, 5] },
     "services": [
       "Processos de violência doméstica e familiar",
       "Medidas protetivas de urgência",
