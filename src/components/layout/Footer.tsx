@@ -11,12 +11,10 @@ const organizacoes = [
   {
     nome: "SEDHAS",
     instagram: "https://www.instagram.com/sedhassobral/",
-    whatsapp: "https://wa.me/558836954128",
   },
   {
     nome: "Prefeitura de Sobral",
     instagram: "https://www.instagram.com/prefeitura_sobral/",
-    whatsapp: "https://wa.me/558836771100",
   },
   {
     nome: "Juizado",
