@@ -13,7 +13,7 @@ import type {
   UserData,
 } from "./types";
 import ChatInput from "./ChatInput";
-import RedirectButton from "./RedirectButton";
+import RedirectButton from "./ActionButton";
 import { sendEmail } from "@/services/email";
 
 const flowData = flow as FlowData;
@@ -23,11 +23,14 @@ const START_NODE = "start";
 const BOT_THINK_DELAY = 900;
 
 const organizationsData = {
+  "180": {
+    link: "tel:180",
+  },
   creas: {
-    whatsapp: "558881132679",
+    link: "https://wa.me/558881132679",
   },
   ddm: {
-    whatsapp: "5585989597453",
+    link: "https://wa.me/5585989597453",
   },
 };
 
@@ -52,9 +55,9 @@ export default function ChatBot() {
     whatsapp: "",
     preferredChannel: null,
   });
-  const [organization, setOrganization] = useState<"creas" | "ddm" | null>(
-    null,
-  );
+  const [organization, setOrganization] = useState<
+    "creas" | "ddm" | "180" | null
+  >(null);
   const [chatState, setChatState] = useState<ChatState>("flow");
   const [messages, setMessages] = useState<ChatMessage[]>(buildInitialMessages);
   const [currentNodeKey, setCurrentNodeKey] = useState<string | null>(() =>
@@ -86,7 +89,7 @@ export default function ChatBot() {
       setIsTyping(false);
       if (option.result) {
         const result = resultsData[option.result];
-        if (result) {
+        if (result && option.result !== "180") {
           setMessages((prev) => [
             ...prev,
             {
@@ -103,9 +106,22 @@ export default function ChatBot() {
               text: "Para continuarmos, preciso do seu nome.",
             },
           ]);
+          setChatState("ask_name"); // muda o estado do chat para "ask_name" após mostrar o resultado
+          setOrganization(option.result as "creas" | "ddm" | "180");
+          return;
         }
-        setChatState("ask_name"); // muda o estado do chat para "ask_name" após mostrar o resultado
-        setOrganization(option.result as "creas" | "ddm");
+        setMessages((prev) => [
+          ...prev,
+          {
+            id: crypto.randomUUID(),
+            sender: "bot",
+            type: "result",
+            text: result.title,
+            description: result.message,
+          },
+        ]);
+        setChatState("redirect"); // muda o estado do chat para "ask_whatsapp" após mostrar o resultado
+        setOrganization(option.result as "creas" | "ddm" | "180");
         return;
       }
 
@@ -322,7 +338,8 @@ export default function ChatBot() {
 
       {chatState === "redirect" && !isTyping && organization && (
         <RedirectButton
-          href={`https://wa.me/${organizationsData[organization].whatsapp}`}
+          type={organization !== "180" ? "whatsapp" : "phone"}
+          href={organizationsData[organization].link}
         />
       )}
 

@@ -3,9 +3,12 @@
     "title": "Delegacia de Defesa da Mulher",
     "message": "A DDM poderá registrar o boletim de ocorrência, solicitar medidas protetivas e encaminhar você para outros serviços da rede de apoio."
   },
-
   "creas": {
     "title": "CREAS",
     "message": "O CREAS oferece acolhimento, acompanhamento psicossocial e orientação especializada para pessoas em situação de violência."
+  },
+  "180": {
+    "title": "Central de Atendimento à Mulher — Ligue 180",
+    "message": "O Ligue 180 oferece orientação, acolhimento e informações sobre os serviços da rede de atendimento à mulher em situação de violência."
   }
 }

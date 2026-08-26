@@ -12,13 +12,12 @@
       }
     ]
   },
-
   "immediateDanger": {
-    "question": "O agressor está no local ou a violência está acontecendo agora?",
+    "question": "A violência está acontecendo agora ou há risco de acontecer imediatamente?",
     "options": [
       {
-        "label": "Sim",
-        "result": "ddm"
+        "label": "Sim, há risco imediato",
+        "result": "180"
       },
       {
         "label": "Não",
@@ -26,7 +25,6 @@
       }
     ]
   },
-
   "violence": {
     "question": "Qual situação melhor descreve o que você procura?",
     "options": [
@@ -39,12 +37,11 @@
         "result": "creas"
       },
       {
-        "label": "Quero apenas conhecer meus direitos",
+        "label": "Quero conhecer meus direitos",
         "next": "guidance"
       }
     ]
   },
-
   "report": {
     "question": "Você deseja registrar uma ocorrência ou buscar proteção legal?",
     "options": [
@@ -58,7 +55,6 @@
       }
     ]
   },
-
   "support": {
     "question": "Você gostaria de receber apoio psicológico e acompanhamento social?",
     "options": [
@@ -72,7 +68,6 @@
       }
     ]
   },
-
   "guidance": {
     "question": "O que você precisa neste momento?",
     "options": [
@@ -85,7 +80,7 @@
         "result": "creas"
       },
       {
-        "label": "Registrar denúncia",
+        "label": "Registrar uma ocorrência",
         "result": "ddm"
       }
     ]
