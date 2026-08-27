@@ -1,5 +1,33 @@
 [
   {
+    "id": "agosto-lilas",
+    "title": "Agosto Lilás",
+    "slug": "agosto-lilas",
+    "description": "Ação do Agosto Lilás realizada pelo CREAS em parceria com a Secretaria de Segurança Cidadã, com atividades voltadas à conscientização, prevenção e enfrentamento da violência contra a mulher, fortalecendo a informação, a proteção e a rede de apoio.",
+    "image": "agosto_lilas",
+    "date": "2026-08-15",
+    "location": "CREAS",
+    "buttonText": "Saiba mais",
+    "highlights": [
+      {
+        "icon": "solar:calendar-bold",
+        "title": "Data",
+        "description": "15 de agosto de 2026"
+      },
+      {
+        "icon": "solar:map-point-bold",
+        "title": "Local",
+        "description": "CREAS"
+      },
+      {
+        "icon": "solar:users-group-rounded-bold",
+        "title": "Público",
+        "description": "Mulheres e comunidade em geral"
+      }
+    ],
+    "organizer": "A ação é do Agosto Lilás — CREAS com a Secretaria de Segurança Cidadã"
+  },
+  {
     "id": "grupo-autonomia",
     "title": "Grupo Temático: Autonomia – Fazer por Mim Mesmo!",
     "slug": "grupo-autonomia",

@@ -1,12 +1,14 @@
 import aepeti from "@/assets/aepeti.jpeg";
 import grupo_autonomia from "@/assets/grupo_autonomia.jpeg";
 import novas_trilhas from "@/assets/novas_trilhas.jpeg";
+import agosto_lilas from "@/assets/agosto_lilas.jpeg";
 import Card from "@/components/Card";
 
 const images = {
   aepeti,
   grupo_autonomia,
   novas_trilhas,
+  agosto_lilas,
 };
 
 type EventParams = {

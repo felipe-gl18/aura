@@ -79,11 +79,11 @@ export default function Map() {
           center={[-3.6894, -40.3497]}
           zoom={14}
           scrollWheelZoom={false}
-          className="h-full w-full rounded-xl"
+          className="aura-map h-full w-full rounded-xl"
         >
           <TileLayer
-            attribution="&copy; OpenStreetMap contributors &copy; CARTO"
-            url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
 
           {filteredLocations.map((location) => (
