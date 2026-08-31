@@ -469,6 +469,26 @@
     "lng": -40.49860722081354
   },
   {
+    "id": "casa-mulher-cearense",
+    "name": "Casa da Mulher Cearense de Sobral",
+    "subtitle": "Casa da Mulher Cearense",
+    "category": "casa_da_mulher_cearense",
+    "icon": "healthicons:community-health-worker",
+    "address": "Av. Monsenhor Aloísio Pinho, s/n - Cidade Gerardo Cristino de Menezes, Sobral - CE, 62051-215",
+    "phone": "(88) 98959-7453",
+    "hours": "24 horas, todos os dias",
+    "schedule": { "is24h": true },
+    "services": [
+      "Delegacia de Defesa da Mulher",
+      "Juizado de Violência Doméstica",
+      "Defensoria Pública",
+      "Atendimento psicossocial",
+      "Ministério Público"
+    ],
+    "lat": -3.704837585431943,
+    "lng": -40.3434715919958
+  },
+  {
     "id": "ddm-sobral",
     "name": "Delegacia de Defesa da Mulher",
     "subtitle": "Delegacia de Defesa da Mulher",

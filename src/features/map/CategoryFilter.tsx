@@ -10,9 +10,11 @@ const categoryIcons: Record<ServiceCategory, string> = {
   cras: "solar:users-group-rounded-bold",
   saude: "solar:health-bold",
   justica: "solar:scale-bold",
+  casa_da_mulher_cearense: "bi:house-heart",
 };
 
 const categories: ServiceCategory[] = [
+  "casa_da_mulher_cearense",
   "ddm",
   "creas",
   "cras",

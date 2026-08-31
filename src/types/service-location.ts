@@ -1,6 +1,12 @@
 import type { Schedule } from "@/lib/opening-hours";
 
-export type ServiceCategory = "ddm" | "creas" | "cras" | "saude" | "justica";
+export type ServiceCategory =
+  | "ddm"
+  | "creas"
+  | "cras"
+  | "saude"
+  | "justica"
+  | "casa_da_mulher_cearense";
 
 export type ServiceLocation = {
   id: string;
@@ -27,6 +33,7 @@ export const categoryStyles: Record<
   cras: { color: "#EA580C", bg: "#FFEDD5" },
   saude: { color: "#2563EB", bg: "#DBEAFE" },
   justica: { color: "#7C3AED", bg: "#EDE5FA" },
+  casa_da_mulher_cearense: { color: "#DB2777", bg: "#FCE7F3" },
 };
 
 export const categoryLabels: Record<ServiceCategory, string> = {
@@ -35,4 +42,5 @@ export const categoryLabels: Record<ServiceCategory, string> = {
   cras: "CRAS",
   saude: "Saúde",
   justica: "Justiça",
+  casa_da_mulher_cearense: "Casa da Mulher Cearense",
 };
